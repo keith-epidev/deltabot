@@ -1,5 +1,5 @@
-include <LM8UU.scad>
-include <extruder.scad>
+include <../lib/LM8UU.scad>
+include <../lib/extruder.scad>
 
 
 $fn = 50;
@@ -42,7 +42,7 @@ outset = 26;
 d = 15;
 r = d/2;
 test = outset - r;
-
+color("white")
 union(){
 translate([0,3,0])
 traxxis_mount();
@@ -51,7 +51,9 @@ traxxis_mount();
 difference(){
 translate([-test,-(d+4)/2,0]) color("white") cube([test*2,19,plate_height]);
 translate([0,0,-1])
-hex(s=plate_height+2,d=13);
+hex(s=plate_height-3,d=13);
+
+cylinder(r=5,h=25,center=true);
 
 for(i = [-13,13])
 translate([i,0,-1])
@@ -102,5 +104,5 @@ cylinder(r=1.5, h=d+10);
 
 
 carriage();
-translate([0,0,8])
+translate([0,0,-3])
 carriage_plate();

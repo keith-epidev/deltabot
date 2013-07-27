@@ -1,5 +1,5 @@
-include <nema.scad>
-include <LM8UU.scad>
+include <../lib/nema.scad>
+include <../lib/LM8UU.scad>
 
 $fn = 50;
 
