@@ -211,7 +211,7 @@ platform();
 for(j = [0:2])
 rotate([0,0,j*360/3])
 	for(i = [-1,1])
-	translate([i*5 ,18,2])
+	translate([i*5 ,18,4])
 	traxxis_ball();
 
 for(j = [0:2])
@@ -249,8 +249,8 @@ cylinder(r=1.6,h=35);
 }
 }
 
-/*
+
 translate([0,0,-10])
 extruder();
 platform_assembled();
-*/
+
