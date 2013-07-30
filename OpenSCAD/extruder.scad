@@ -1,31 +1,58 @@
+$fn = 30;
+
 module extruder(){
+rotate([180,0,0]) nozzle();
 	barrel();
-	nozzle();
-	translate([0,0,41]) brass_insert();
+	translate([0,0,20]) brass_insert();
 }
 
 
 module barrel(){
 color("black")
-translate([0,0,2]){
-difference(){
-cylinder(r = 8, h= 58.27 );
-cylinder(r = 3, h= 60 );
-}}
+	difference(){
+		cylinder(r = 8, h= 39.5 );
+		//inner channel
+		cylinder(r = 3, h= 80, center = true );
+		
+		translate([0,0,30]) barrel_ring();
+
+
+	}
 }
+
+module barrel_ring(){
+color("black")
+	difference(){
+		cylinder(r = 8.1, h= 4.6 );
+		//inner channel
+		
+		cylinder(r = 6, h=10 ,center = true);
+		
+
+	}
+
+
+}
+
+
 
 module nozzle(){
 color("silver"){
 
 
-translate([-15,-10,0])
-cube([30,20,8]);
 
-translate([0,0,-4])
-cylinder(4,0.4,6);
-
+translate([-6,-16/2,0])
+cube([18.25,16,9.3]);
+translate([0,0,9.3]){
+cylinder(h = 2,r = 7.6/2);
+translate([0,0,2]){
+cylinder(2.3,7.6/2,1.74/2);
+translate([0,0,2.3]) cylinder(h = .8, r =1.74/2);
 }
 }
+}
+}
+
 
 module brass_insert(){
 	color("gold")
@@ -76,18 +103,20 @@ cylinder(r=5,h=10);
 
 
 module top_end(){
+height = 4.4;
+
 color("white"){
 difference(){
 	union(){
 	//base
-	cylinder(r=12,h=5);
+	cylinder(r=12,h=height);
 
 	for(j = [0:2])
 	rotate([0,0,j*360/3]) translate([-5 ,7,0]) 
 	union(){
-	cube([10,5,5]);
+	cube([10,5,height]);
 	translate([5,5,0])
-	cylinder(r=5,h=5);
+	cylinder(r=5,h=height);
 	}
 	}
 	
@@ -168,13 +197,13 @@ difference(){
 
 
 //peek tube bore
-cylinder(r=10,h=11,center=true);
+cylinder(r=10,h=24,center=true);
 
 //stand off holes
 for(j = [0:2])
 rotate([0,0,j*360/3])
 translate([0 ,13,0])
-cylinder(r=1.5,h=11,center=true);
+cylinder(r=1.5,h=24,center=true);
 
 }
 }
@@ -186,13 +215,14 @@ module traxxis_mount(){
 color("white"){
 difference(){
 union(){
-translate([-3,5,0]) cube([6,9,8]);
+translate([-3,5,0]) cube([6,14,8]);
+
 for(i = [-1,1]){
-translate([i*10,0,0]) translate([-3,0,0]) cube([6,14,8]);
+translate([i*(7+6),0,0]) translate([-3,0,0]) cube([6,19,8]);
 }
 }
 
-translate([-20,10,4])
+translate([-20,15,4])
 rotate([0,90,0])
 cylinder(r=2,h=40);
 
@@ -201,6 +231,25 @@ cylinder(r=2,h=40);
 
 }
 
+}
+//traxxis_mount();
+
+
+module traxxis_ball(){
+color("silver"){
+	
+
+	sphere(r=5.8/2);
+
+for(i = [0,180])	
+rotate([0,0,i])
+translate([3.5,0,0])
+	difference(){
+	sphere(r=5.8/2);
+	translate([0,-3,-3])
+	cube([6,6,6]);
+	}
+}
 }
 
 
@@ -211,7 +260,7 @@ platform();
 for(j = [0:2])
 rotate([0,0,j*360/3])
 	for(i = [-1,1])
-	translate([i*5 ,18,4])
+	translate([i*6.5 ,22,4])
 	traxxis_ball();
 
 for(j = [0:2])
@@ -220,22 +269,16 @@ translate([0 ,13,5])
 dodgy_standoffs();
 
 
-translate([0 ,0,40]){
+translate([0 ,0,28]){
 top_end_open();
 top_end_closed();
 }
-translate([0 ,0, 45])
-top_tube_fix();
+translate([0 ,0, 28+4.6]) top_tube_fix();
 
 }
 
 
 
-module traxxis_ball(){
-color("silver"){
-sphere(r=3);
-}
-}
 
 
 
@@ -243,14 +286,15 @@ sphere(r=3);
 module dodgy_standoffs(){
 color("silver"){
 
-cylinder(r=1.6,h=35);
+cylinder(r=1.6,h=23);
 
 
 }
 }
 
-
-translate([0,0,-10])
+/*
+translate([0,0,-2])
 extruder();
 platform_assembled();
+*/
 

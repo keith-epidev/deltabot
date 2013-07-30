@@ -1,5 +1,5 @@
 include <../lib/LM8UU.scad>
-include <../lib/extruder.scad>
+include <../extruder.scad>
 
 
 $fn = 50;
@@ -70,9 +70,10 @@ cylinder(r=1.5, h=40);
 
 }
 
-for(i = [0,180]){
+for(i = [0,1]){
 
-rotate([0,0,i])
+//rotate([0,0,i])
+mirror([i,0,0])
 translate([outset,0,0])
 difference(){
 union(){
@@ -84,11 +85,11 @@ translate([0,0,-1]) color("white") cylinder(r=r,h=len+plate_height+2);
 color("white") translate([3,-3,-1]) cube([14,6,plate_height+2]);
 
 color("white") 
+mirror([0,1,0])
 translate([r+4,r+3,4]){ 
 rotate([90,0,0]){
-hex(s=3,d=4);
+hex(s=3,d=6);
 cylinder(r=1.5, h=d+10);
-
 }
 
 }
@@ -104,5 +105,5 @@ cylinder(r=1.5, h=d+10);
 
 
 carriage();
-translate([0,0,-3])
-carriage_plate();
+//translate([0,0,-3])
+//carriage_plate();
