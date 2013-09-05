@@ -18,11 +18,11 @@ color("white") cylinder(r=7.5,h=7);
 
 
 translate([0,0,0])
-color("white") cylinder(r=2.6,h=26);
+color("white") cylinder(r=2.45,h=26);
 
 translate([0,0,16])
 rotate([90,0,0])
-color("white") cylinder(r=1.5,h=16);
+color("white") cylinder(r=1.2,h=16);
 
 
 translate([-2,-4,3])
