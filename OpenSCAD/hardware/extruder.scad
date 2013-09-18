@@ -223,9 +223,12 @@ translate([i*(7+6),0,0]) translate([-3,0,0]) cube([6,19,8]);
 }
 
 translate([-20,15,4])
-rotate([0,90,0])
+rotate([0,90,0]){
 cylinder(r=2,h=40);
-
+//bores
+translate([0,0,3]) cylinder(r=3,h=3);
+translate([0,0,34]) cylinder(r=3,h=3);
+}
 }
 
 

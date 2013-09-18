@@ -15,9 +15,10 @@ If you are interested, you can follow a brief blog at [http://printer.epidev.com
 - Automated Calibration
 
 ##Versions
-There are two variants being produced by this project:
-1. Large fast robot
-2. Small, slow but strong platform
+There are three variants being produced by this project:
+1. Large robot  
+2. Small, slow but strong platform  
+3. Small, fast robot  
 
 ##Inspiration
 Although I have not forked any current designs, this project is still based upon exiting work.

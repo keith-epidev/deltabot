@@ -1,11 +1,11 @@
 $fn = 50;
 
 module threaded(h=1000,r=4){
-color("silver")
-cylinder(r=r,h=h);
+	color("silver")
+	cylinder(r=r,h=h);
 }
 
-module coupler(){
+module threaded_coupler_8mm(){
 
 difference(){
 color("white") cylinder(r=10,h=20);
@@ -36,7 +36,7 @@ color("white") cube([12,18,7]);
 
 
 
-module coupler_5mm(){
+module threaded_coupler_5mm(){
 
 difference(){
 color("white") cylinder(r=6,h=15);
@@ -67,4 +67,3 @@ color("white") cube([12,18,4]);
 
 
 
-coupler();
