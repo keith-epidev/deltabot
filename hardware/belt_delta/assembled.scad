@@ -1,7 +1,8 @@
-include <bracket3.scad>;
-include <lib/nema.scad>;
-include <lib/LM8UU.scad>;
-include <carriage2.scad>;
+include <linear_actuator/bracket.scad>;
+include <../lib/nema.scad>;
+include <../lib/LM8UU.scad>;
+include <linear_actuator/carriage.scad>;
+include <linear_actuator/strut.scad>;
 
 height = 330;
 width = height/2;
@@ -81,7 +82,10 @@ rotate([0,0,(i*360)/3])
 translate([0,width*sqrt(2)/2,0])
 side();
 
+//board
 color("Wheat")
 translate([0,0,42/2])
 cylinder(r=width/2+20,h=2);
+
+
 

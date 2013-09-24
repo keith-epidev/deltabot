@@ -1,11 +1,11 @@
-include <lib/LM8UU.scad>;
-include <extruder.scad>
+include <../../lib/LM8UU.scad>;
+include <../../hardware/extruder.scad>
 
 module carriage_clamp(){
 color("white"){
 difference(){
 union(){
-cube([8,16,4]);
+cube([8,12,4]);
 translate([4,0,0]){
 	cylinder(r=4,h=4);
 	translate([0,12,0]) cylinder(r=4,h=4);
@@ -63,7 +63,7 @@ for(i = [0,1])
 mirror([0,i,0]){
 translate([-8,6,-1]){ rotate([0,0,0]) cylinder(r=1.7,h=10);
 
-hex(s=4,d=6);
+hex(s=4,d=5);
 }
 }
 //end stop pole
@@ -78,4 +78,4 @@ translate([0,8,-1]){ rotate([0,0,0]) cylinder(r=1.5,h=10);
 
 carriage();
 
-//translate([-12,-8,8]) carriage_clamp();
+//translate([-12,-6,8]) carriage_clamp();
