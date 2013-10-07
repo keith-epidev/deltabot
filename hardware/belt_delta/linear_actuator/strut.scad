@@ -1,4 +1,4 @@
-$fn = 30;
+$fn = 50;
 
 module fillet(r, h) {
     translate([r / 2, r / 2, 0])
@@ -26,7 +26,7 @@ module strut(){
 color("white"){
 		rotate([0,0,60]){
 		difference(){
-		rotate([0,90,0]) cylinder(r=9,h=14,center=true);
+		rotate([0,90,0]) cylinder(r=10,h=14,center=true);
 //		cube([15,13,13],center=true);
 		rotate([0,90,0])
 		cylinder(r=4.4,h=28,center=true);
@@ -36,7 +36,7 @@ color("white"){
 	}
 
 
-	translate([0,0,15])	
+	translate([0,0,16])	
 		difference(){
 		union(){
 		cube([10,outer-15,14],center=true);
