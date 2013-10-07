@@ -1,0 +1,5212 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+C1
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+18pF
+
+*
+]
+[
+DESIGNATOR
+C2
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+18pF
+
+*
+]
+[
+DESIGNATOR
+C3
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C4
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C5
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C6
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C7
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C8_Heated Bed
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C8_Hot End
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C9
+FOOTPRINT
+Capacitor Nichi CL 10x10
+PARTTYPE
+Cap Pol
+DESCRIPTION
+Polarized Capacitor (Axial)
+Comment
+Cap Pol
+Component Kind
+Standard
+Description
+Polarized Capacitor (Axial)
+Footprint
+Capacitor Nichi CL 10x10
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap Pol
+PackageDescription
+Polarized Capacitor; 2 Leads
+PackageReference
+POLAR0.8
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+470uF 25V
+
+*
+]
+[
+DESIGNATOR
+C10
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10nF
+
+*
+]
+[
+DESIGNATOR
+C11
+FOOTPRINT
+CAPC2012L-3D
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+CAPC2012L-3D
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+22uF 6.3V
+
+*
+]
+[
+DESIGNATOR
+C12
+FOOTPRINT
+CAP3216
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+CAP3216
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10uF
+
+*
+]
+[
+DESIGNATOR
+C13_stepper1
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1uF
+
+*
+]
+[
+DESIGNATOR
+C13_stepper2
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1uF
+
+*
+]
+[
+DESIGNATOR
+C13_stepper3
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1uF
+
+*
+]
+[
+DESIGNATOR
+C13_stepper4
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1uF
+
+*
+]
+[
+DESIGNATOR
+C14_stepper1
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100pF
+
+*
+]
+[
+DESIGNATOR
+C14_stepper2
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100pF
+
+*
+]
+[
+DESIGNATOR
+C14_stepper3
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100pF
+
+*
+]
+[
+DESIGNATOR
+C14_stepper4
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100pF
+
+*
+]
+[
+DESIGNATOR
+C15_stepper1
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.01uF
+
+*
+]
+[
+DESIGNATOR
+C15_stepper2
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.01uF
+
+*
+]
+[
+DESIGNATOR
+C15_stepper3
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.01uF
+
+*
+]
+[
+DESIGNATOR
+C15_stepper4
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.01uF
+
+*
+]
+[
+DESIGNATOR
+C16
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10nF
+
+*
+]
+[
+DESIGNATOR
+C17
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+47pF
+
+*
+]
+[
+DESIGNATOR
+C18
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+47pF
+
+*
+]
+[
+DESIGNATOR
+C19
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C20
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+100nF
+
+*
+]
+[
+DESIGNATOR
+C21
+FOOTPRINT
+1608[0603]
+PARTTYPE
+Cap
+DESCRIPTION
+Capacitor
+Comment
+Cap
+Component Kind
+Standard
+Description
+Capacitor
+Footprint
+1608[0603]
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Cap
+PackageDescription
+Radial Cap, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+RAD-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+4.7uF
+
+*
+]
+[
+DESIGNATOR
+D1_Heated Bed
+FOOTPRINT
+LED 0805
+PARTTYPE
+LED3
+DESCRIPTION
+Typical BLUE SiC LED
+Comment
+LED3
+Component Kind
+Standard
+DatasheetVersion
+16-Apr-2002
+Description
+Typical BLUE SiC LED
+Footprint
+LED 0805
+LatestRevisionDate
+17-Dec-2003
+LatestRevisionNote
+PCB Footprint replaced.
+Library Name
+Miscellaneous Devices.IntLib
+Library Reference
+LED3
+PackageDescription
+SM LED; 2 C-Bend Leads; Body 3.5 x 2.8 x 1.9 mm, inc leads (LxWxH typ)
+PackageReference
+3.5X2.8X1.9
+PackageVersion
+16-Apr-2002
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+LED
+
+*
+]
+[
+DESIGNATOR
+D1_Hot End
+FOOTPRINT
+LED 0805
+PARTTYPE
+LED3
+DESCRIPTION
+Typical BLUE SiC LED
+Comment
+LED3
+Component Kind
+Standard
+DatasheetVersion
+16-Apr-2002
+Description
+Typical BLUE SiC LED
+Footprint
+LED 0805
+LatestRevisionDate
+17-Dec-2003
+LatestRevisionNote
+PCB Footprint replaced.
+Library Name
+Miscellaneous Devices.IntLib
+Library Reference
+LED3
+PackageDescription
+SM LED; 2 C-Bend Leads; Body 3.5 x 2.8 x 1.9 mm, inc leads (LxWxH typ)
+PackageReference
+3.5X2.8X1.9
+PackageVersion
+16-Apr-2002
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+LED
+
+*
+]
+[
+DESIGNATOR
+D2
+FOOTPRINT
+DO-214-AA
+PARTTYPE
+D Schottky
+DESCRIPTION
+Schottky Diode
+Code_JEDEC
+DO-214-AA
+Comment
+D Schottky
+Component Kind
+Standard
+Description
+Schottky Diode
+Footprint
+DO-214-AA
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+D Schottky
+PackageDescription
+DO-214-AA/SMB; 2 C-Bend Leads; Body 5.3 x 3.6 mm, inc. leads (LxW)
+PackageReference
+SMB
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+
+*
+]
+[
+DESIGNATOR
+D3
+FOOTPRINT
+DO-214-AA
+PARTTYPE
+D Schottky
+DESCRIPTION
+Schottky Diode
+Code_JEDEC
+DO-214-AA
+Comment
+D Schottky
+Component Kind
+Standard
+Description
+Schottky Diode
+Footprint
+DO-214-AA
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+D Schottky
+PackageDescription
+DO-214-AA/SMB; 2 C-Bend Leads; Body 5.3 x 3.6 mm, inc. leads (LxW)
+PackageReference
+SMB
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+
+*
+]
+[
+DESIGNATOR
+D4
+FOOTPRINT
+LED 0805
+PARTTYPE
+LED2
+DESCRIPTION
+Typical RED, GREEN, YELLOW, AMBER GaAs LED
+Comment
+LED2
+Component Kind
+Standard
+Description
+Typical RED, GREEN, YELLOW, AMBER GaAs LED
+Footprint
+LED 0805
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Devices.IntLib
+Library Reference
+LED2
+PackageDescription
+SM LED; 2 Flat Leads
+PackageReference
+3.2X1.6X1.1
+PackageVersion
+Feb-2002
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+LED2
+
+*
+]
+[
+DESIGNATOR
+D5
+FOOTPRINT
+LED 0805
+PARTTYPE
+LED2
+DESCRIPTION
+Typical RED, GREEN, YELLOW, AMBER GaAs LED
+Comment
+LED2
+Component Kind
+Standard
+Description
+Typical RED, GREEN, YELLOW, AMBER GaAs LED
+Footprint
+LED 0805
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Devices.IntLib
+Library Reference
+LED2
+PackageDescription
+SM LED; 2 Flat Leads
+PackageReference
+3.2X1.6X1.1
+PackageVersion
+Feb-2002
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+LED2
+
+*
+]
+[
+DESIGNATOR
+D6
+FOOTPRINT
+LED 0805
+PARTTYPE
+LED3
+DESCRIPTION
+Typical BLUE SiC LED
+Comment
+LED3
+Component Kind
+Standard
+DatasheetVersion
+16-Apr-2002
+Description
+Typical BLUE SiC LED
+Footprint
+LED 0805
+LatestRevisionDate
+17-Dec-2003
+LatestRevisionNote
+PCB Footprint replaced.
+Library Name
+Miscellaneous Devices.IntLib
+Library Reference
+LED3
+PackageDescription
+SM LED; 2 C-Bend Leads; Body 3.5 x 2.8 x 1.9 mm, inc leads (LxWxH typ)
+PackageReference
+3.5X2.8X1.9
+PackageVersion
+16-Apr-2002
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+LED
+
+*
+]
+[
+DESIGNATOR
+D7
+FOOTPRINT
+LED 0805
+PARTTYPE
+LED3
+DESCRIPTION
+Typical BLUE SiC LED
+Comment
+LED3
+Component Kind
+Standard
+DatasheetVersion
+16-Apr-2002
+Description
+Typical BLUE SiC LED
+Footprint
+LED 0805
+LatestRevisionDate
+17-Dec-2003
+LatestRevisionNote
+PCB Footprint replaced.
+Library Name
+Miscellaneous Devices.IntLib
+Library Reference
+LED3
+PackageDescription
+SM LED; 2 C-Bend Leads; Body 3.5 x 2.8 x 1.9 mm, inc leads (LxWxH typ)
+PackageReference
+3.5X2.8X1.9
+PackageVersion
+16-Apr-2002
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+LED
+
+*
+]
+[
+DESIGNATOR
+F1
+FOOTPRINT
+Fuse Holder
+PARTTYPE
+Fuse
+DESCRIPTION
+Fuse
+Comment
+Fuse
+Component Kind
+Standard
+Description
+Fuse
+Footprint
+Fuse Holder
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Fuse
+PackageDescription
+Thru-Hole; 2 Leads
+PackageReference
+PIN-W2/E2.8
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+]
+[
+DESIGNATOR
+FB1
+FOOTPRINT
+0603
+PARTTYPE
+Ferrite Bead
+DESCRIPTION
+
+Comment
+Ferrite Bead
+Component Kind
+Standard
+Description
+
+Footprint
+0603
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Ferrite Bead
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+FB2
+FOOTPRINT
+0603
+PARTTYPE
+Ferrite Bead
+DESCRIPTION
+
+Comment
+Ferrite Bead
+Component Kind
+Standard
+Description
+
+Footprint
+0603
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Ferrite Bead
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+L1
+FOOTPRINT
+Inductor 5020
+PARTTYPE
+Inductor
+DESCRIPTION
+Inductor
+Code_IEC
+1005
+Code_JEITA
+0402
+Comment
+Inductor
+Component Kind
+Standard
+Description
+Inductor
+Footprint
+Inductor 5020
+LatestRevisionDate
+29-May-2009
+LatestRevisionNote
+IPC-7351 Footprint Added.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Inductor
+PackageDescription
+Chip Inductor
+PackageReference
+0402-A
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+
+*
+]
+[
+DESIGNATOR
+P1_Heated Bed
+FOOTPRINT
+HDR1X4
+PARTTYPE
+Header 4
+DESCRIPTION
+Header, 4-Pin
+Comment
+Header 4
+Component Kind
+Standard
+Description
+Header, 4-Pin
+Footprint
+HDR1X4
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 4
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P1_Hot End
+FOOTPRINT
+HDR1X4
+PARTTYPE
+Header 4
+DESCRIPTION
+Header, 4-Pin
+Comment
+Header 4
+Component Kind
+Standard
+Description
+Header, 4-Pin
+Footprint
+HDR1X4
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 4
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P2_LinearActuator1
+FOOTPRINT
+HDR1X3
+PARTTYPE
+Header 3
+DESCRIPTION
+Header, 3-Pin
+Comment
+Header 3
+Component Kind
+Standard
+Description
+Header, 3-Pin
+Footprint
+HDR1X3
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 3
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P2_LinearActuator2
+FOOTPRINT
+HDR1X3
+PARTTYPE
+Header 3
+DESCRIPTION
+Header, 3-Pin
+Comment
+Header 3
+Component Kind
+Standard
+Description
+Header, 3-Pin
+Footprint
+HDR1X3
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 3
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P2_LinearActuator3
+FOOTPRINT
+HDR1X3
+PARTTYPE
+Header 3
+DESCRIPTION
+Header, 3-Pin
+Comment
+Header 3
+Component Kind
+Standard
+Description
+Header, 3-Pin
+Footprint
+HDR1X3
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 3
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P3
+FOOTPRINT
+PowerJack
+PARTTYPE
+power_jack
+DESCRIPTION
+
+Comment
+power_jack
+Component Kind
+Standard
+Description
+
+Footprint
+PowerJack
+Library Name
+Schlib1.SchLib
+Library Reference
+power_jack
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P4
+FOOTPRINT
+HDR2X2
+PARTTYPE
+Header 2X2
+DESCRIPTION
+Header, 2-Pin, Dual row
+Comment
+Header 2X2
+Component Kind
+Standard
+Description
+Header, 2-Pin, Dual row
+Footprint
+HDR2X2
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 2X2
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P5_stepper1
+FOOTPRINT
+HDR1X4
+PARTTYPE
+Header 4
+DESCRIPTION
+Header, 4-Pin
+Comment
+Header 4
+Component Kind
+Standard
+Description
+Header, 4-Pin
+Footprint
+HDR1X4
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 4
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P5_stepper2
+FOOTPRINT
+HDR1X4
+PARTTYPE
+Header 4
+DESCRIPTION
+Header, 4-Pin
+Comment
+Header 4
+Component Kind
+Standard
+Description
+Header, 4-Pin
+Footprint
+HDR1X4
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 4
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P5_stepper3
+FOOTPRINT
+HDR1X4
+PARTTYPE
+Header 4
+DESCRIPTION
+Header, 4-Pin
+Comment
+Header 4
+Component Kind
+Standard
+Description
+Header, 4-Pin
+Footprint
+HDR1X4
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 4
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P5_stepper4
+FOOTPRINT
+HDR1X4
+PARTTYPE
+Header 4
+DESCRIPTION
+Header, 4-Pin
+Comment
+Header 4
+Component Kind
+Standard
+Description
+Header, 4-Pin
+Footprint
+HDR1X4
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Miscellaneous Connectors.IntLib
+Library Reference
+Header 4
+PCB3D
+
+Publisher
+Altium Limited
+Signal Integrity
+Connector
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+P6
+FOOTPRINT
+USB micro B
+PARTTYPE
+USB Micro B
+DESCRIPTION
+
+Comment
+USB Micro B
+Component Kind
+Standard
+Description
+
+Footprint
+USB micro B
+Library Name
+Schlib1.SchLib
+Library Reference
+USB Micro B
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10K
+
+*
+]
+[
+DESIGNATOR
+R2_Heated Bed
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+4K7
+
+*
+]
+[
+DESIGNATOR
+R2_Hot End
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+4K7
+
+*
+]
+[
+DESIGNATOR
+R3_Heated Bed
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+1K
+
+*
+]
+[
+DESIGNATOR
+R3_Hot End
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+1K
+
+*
+]
+[
+DESIGNATOR
+R4_Heated Bed
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+270R
+
+*
+]
+[
+DESIGNATOR
+R4_Hot End
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+270R
+
+*
+]
+[
+DESIGNATOR
+R5_Heated Bed
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+1K
+
+*
+]
+[
+DESIGNATOR
+R5_Hot End
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+1K
+
+*
+]
+[
+DESIGNATOR
+R6_LinearActuator1
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+220R
+
+*
+]
+[
+DESIGNATOR
+R6_LinearActuator2
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+220R
+
+*
+]
+[
+DESIGNATOR
+R6_LinearActuator3
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+220R
+
+*
+]
+[
+DESIGNATOR
+R7_LinearActuator1
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10K
+
+*
+]
+[
+DESIGNATOR
+R7_LinearActuator2
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10K
+
+*
+]
+[
+DESIGNATOR
+R7_LinearActuator3
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10K
+
+*
+]
+[
+DESIGNATOR
+R8
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+49.9k
+
+*
+]
+[
+DESIGNATOR
+R9
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+10K
+
+*
+]
+[
+DESIGNATOR
+R10
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+15.8k
+
+*
+]
+[
+DESIGNATOR
+R11
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+800R
+
+*
+]
+[
+DESIGNATOR
+R12
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+220R
+
+*
+]
+[
+DESIGNATOR
+R13_stepper1
+FOOTPRINT
+RES_SMD
+PARTTYPE
+RES_POT
+DESCRIPTION
+
+Comment
+RES_POT
+Component Kind
+Standard
+Description
+
+Footprint
+RES_SMD
+Library Name
+Schlib1.SchLib
+Library Reference
+RES_POT
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+R13_stepper2
+FOOTPRINT
+RES_SMD
+PARTTYPE
+RES_POT
+DESCRIPTION
+
+Comment
+RES_POT
+Component Kind
+Standard
+Description
+
+Footprint
+RES_SMD
+Library Name
+Schlib1.SchLib
+Library Reference
+RES_POT
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+R13_stepper3
+FOOTPRINT
+RES_SMD
+PARTTYPE
+RES_POT
+DESCRIPTION
+
+Comment
+RES_POT
+Component Kind
+Standard
+Description
+
+Footprint
+RES_SMD
+Library Name
+Schlib1.SchLib
+Library Reference
+RES_POT
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+R13_stepper4
+FOOTPRINT
+RES_SMD
+PARTTYPE
+RES_POT
+DESCRIPTION
+
+Comment
+RES_POT
+Component Kind
+Standard
+Description
+
+Footprint
+RES_SMD
+Library Name
+Schlib1.SchLib
+Library Reference
+RES_POT
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+R14_stepper1
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R14_stepper2
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R14_stepper3
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R14_stepper4
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R15_stepper1
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R15_stepper2
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R15_stepper3
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R15_stepper4
+FOOTPRINT
+C1206
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+C1206
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+0.1R
+
+*
+]
+[
+DESIGNATOR
+R16
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+27R
+
+*
+]
+[
+DESIGNATOR
+R17
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+270R
+
+*
+]
+[
+DESIGNATOR
+R18
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+27R
+
+*
+]
+[
+DESIGNATOR
+R19
+FOOTPRINT
+J1-0603
+PARTTYPE
+Res
+DESCRIPTION
+Resistor 0805
+Comment
+Res
+Component Kind
+Standard
+Description
+Resistor 0805
+Footprint
+J1-0603
+LatestRevisionDate
+17-Jul-2002
+LatestRevisionNote
+Re-released for DXP Platform.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Res
+PackageDescription
+Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing
+PackageReference
+AXIAL-0.3
+PCB3D
+
+Published
+8-Jun-2000
+Publisher
+Altium Limited
+Signal Integrity
+
+Simulation
+
+Value
+270R
+
+*
+]
+[
+DESIGNATOR
+SW1
+FOOTPRINT
+Switch 6mm
+PARTTYPE
+Tactile Switch 6mm
+DESCRIPTION
+
+Comment
+Tactile Switch 6mm
+Component Kind
+Standard
+Description
+
+Footprint
+Switch 6mm
+Library Name
+Schematic Lib.SchLib
+Library Reference
+Tactile Switch 6mm
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+SW2
+FOOTPRINT
+MCLSS22
+PARTTYPE
+DPDT
+DESCRIPTION
+Switch
+Code_IPC
+SOT26A-6
+Code_JEITA
+SC-74
+Comment
+DPDT
+Component Kind
+Standard
+Description
+Switch
+Footprint
+MCLSS22
+LatestRevisionDate
+29-May-2009
+LatestRevisionNote
+IPC-7351 Footprint Added.
+Library Name
+Schematic Lib.SchLib
+Library Reference
+DPDT
+PackageDescription
+6-Pin SOT-23 Package 0.95 mm Pitch, 2.7 mm Lead Span
+PackageReference
+SOT23-6
+PackageVersion
+Mar-2001
+PCB3D
+
+Published
+24-Mar-1999
+Publisher
+Altium Limited
+
+*
+]
+[
+DESIGNATOR
+U1
+FOOTPRINT
+44A_N
+PARTTYPE
+ATmega644PA-AU
+DESCRIPTION
+8-bit AVR Microcontroller, 64KB Flash, 2KB EEPROM, 4KB SRAM, 44-pin TQFP, Industrial Grade (-40°C to 85°C)
+Comment
+ATmega644PA-AU
+Component Kind
+Standard
+ComponentLink1Description
+Manufacturer Link
+ComponentLink1URL
+http://www.atmel.com/products/avr/default.asp?
+ComponentLink2Description
+ATmega164A/164PA/324A/324PA/644A/644PA/1284/1284P Datasheet
+ComponentLink2URL
+http://www.atmel.com/dyn/resources/prod_documents/doc8272.pdf
+ComponentLink3Description
+ATmega164A/164PA/324A/324PA/644A/644PA/1284/1284P Summary
+ComponentLink3URL
+http://www.atmel.com/dyn/resources/prod_documents/8272S.pdf
+ComponentLink4Description
+Atmel.com Home
+ComponentLink4URL
+http://www.atmel.com
+DatasheetVersion
+revA, Jan-2010
+Description
+8-bit AVR Microcontroller, 64KB Flash, 2KB EEPROM, 4KB SRAM, 44-pin TQFP, Industrial Grade (-40°C to 85°C)
+Footprint
+44A_N
+Library Name
+Atmel Microcontroller 8-Bit megaAVR.IntLib
+Library Reference
+ATmega644PA-AU
+PackageDescription
+44-Pin Plastic Thin Profile Quad Flat Pack, 10 x 10 x 1.0 mm Body, 0.8 mm Pitch (TQFP)
+
+*
+]
+[
+DESIGNATOR
+U2_Heated Bed
+FOOTPRINT
+SO-8_M
+PARTTYPE
+irf8714pbf
+DESCRIPTION
+
+Comment
+irf8714pbf
+Component Kind
+Standard
+Description
+
+Footprint
+SO-8_M
+Library Name
+Schlib1.SchLib
+Library Reference
+irf8714pbf
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U2_Hot End
+FOOTPRINT
+SO-8_M
+PARTTYPE
+irf8714pbf
+DESCRIPTION
+
+Comment
+irf8714pbf
+Component Kind
+Standard
+Description
+
+Footprint
+SO-8_M
+Library Name
+Schlib1.SchLib
+Library Reference
+irf8714pbf
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U3
+FOOTPRINT
+SOT23-6
+PARTTYPE
+AOZ1280
+DESCRIPTION
+
+Comment
+AOZ1280
+Component Kind
+Standard
+Description
+
+Footprint
+SOT23-6
+Library Name
+Schematic Lib.SchLib
+Library Reference
+AOZ1280
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U4_stepper1
+FOOTPRINT
+DVR
+PARTTYPE
+DRV8825
+DESCRIPTION
+
+Comment
+DRV8825
+Component Kind
+Standard
+Description
+
+Footprint
+DVR
+Library Name
+Schlib1.SchLib
+Library Reference
+DRV8825
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U4_stepper2
+FOOTPRINT
+DVR
+PARTTYPE
+DRV8825
+DESCRIPTION
+
+Comment
+DRV8825
+Component Kind
+Standard
+Description
+
+Footprint
+DVR
+Library Name
+Schlib1.SchLib
+Library Reference
+DRV8825
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U4_stepper3
+FOOTPRINT
+DVR
+PARTTYPE
+DRV8825
+DESCRIPTION
+
+Comment
+DRV8825
+Component Kind
+Standard
+Description
+
+Footprint
+DVR
+Library Name
+Schlib1.SchLib
+Library Reference
+DRV8825
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U4_stepper4
+FOOTPRINT
+DVR
+PARTTYPE
+DRV8825
+DESCRIPTION
+
+Comment
+DRV8825
+Component Kind
+Standard
+Description
+
+Footprint
+DVR
+Library Name
+Schlib1.SchLib
+Library Reference
+DRV8825
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+U5
+FOOTPRINT
+SSOP16_N
+PARTTYPE
+FT230XS
+DESCRIPTION
+
+Comment
+FT230XS
+Component Kind
+Standard
+Description
+
+Footprint
+SSOP16_N
+Library Name
+Schlib1.SchLib
+Library Reference
+FT230XS
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+[
+DESIGNATOR
+Y1
+FOOTPRINT
+ABMM2
+PARTTYPE
+ABMM2
+DESCRIPTION
+
+Comment
+ABMM2
+Component Kind
+Standard
+Description
+
+Footprint
+ABMM2
+Library Name
+Schlib1.SchLib
+Library Reference
+ABMM2
+PCB3D
+
+Signal Integrity
+
+Simulation
+
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+
+*
+]
+(
+VCC
+C20-2 Cap-2 Passive      
+C21-2 Cap-2 Passive      
+FB2-1 Ferrite Bead-1 Passive      
+U5-12 FT230XS-VCC Passive      
+)
+(
+NetC16_2
+C16-2 Cap-2 Passive      
+FB2-2 Ferrite Bead-2 Passive      
+P6-1 USB Micro B-VCC Passive      
+)
+(
+NetC17_2
+C17-2 Cap-2 Passive      
+P6-2 USB Micro B-D- Passive      
+R16-2 Res-2 Passive      
+)
+(
+NetC18_2
+C18-2 Cap-2 Passive      
+P6-3 USB Micro B-D+ Passive      
+R18-2 Res-2 Passive      
+)
+(
+NetD6_1
+D6-1 LED3-A Passive      
+R19-2 Res-2 Passive      
+)
+(
+NetD6_2
+D6-2 LED3-K Passive      
+U5-14 FT230XS-CBUS1 Passive      
+)
+(
+NetD7_1
+D7-1 LED3-A Passive      
+R17-2 Res-2 Passive      
+)
+(
+NetD7_2
+D7-2 LED3-K Passive      
+U5-7 FT230XS-CBUS2 Passive      
+)
+(
+NetR16_1
+R16-1 Res-1 Passive      
+U5-9 FT230XS-USBDM Passive      
+)
+(
+NetR18_1
+R18-1 Res-1 Passive      
+U5-8 FT230XS-USBDP Passive      
+)
+(
+3.3V
+C19-2 Cap-2 Passive      
+R17-1 Res-1 Passive      
+R19-1 Res-1 Passive      
+U5-3 FT230XS-VCCIO Passive      
+U5-10 FT230XS-3V3 OUT Passive      
+U5-11 FT230XS-RESET# Passive      
+)
+(
+NetR4_Heated Bed_2
+R4_Heated Bed-2 Res-2 Passive      
+R5_Heated Bed-2 Res-2 Passive      
+)
+(
+NetC8_Heated Bed_1
+C8_Heated Bed-1 Cap-1 Passive      
+R3_Heated Bed-1 Res-1 Passive      
+)
+(
+NetU1_3
+U1-3 ATmega644PA-AU-PB7 (PCINT15/SCK) IO           
+U4_stepper1-20 DRV8825-DIR Passive      
+)
+(
+NetC8_Hot End_1
+C8_Hot End-1 Cap-1 Passive      
+R3_Hot End-1 Res-1 Passive      
+U1-37 ATmega644PA-AU-PA0 (ADC0/PCINT0) IO           
+)
+(
+NetU1_2
+U1-2 ATmega644PA-AU-PB6 (PCINT14/MISO) IO           
+U4_stepper1-22 DRV8825-STEP Passive      
+)
+(
+NetR4_Hot End_2
+R4_Hot End-2 Res-2 Passive      
+R5_Hot End-2 Res-2 Passive      
+U1-36 ATmega644PA-AU-PA1 (ADC1/PCINT1) IO           
+)
+(
+NetU1_24
+U1-24 ATmega644PA-AU-PC5 (TDI/PCINT21) IO           
+U4_stepper1-21 DRV8825-n\E\N\B\L\ Passive      
+U4_stepper2-21 DRV8825-n\E\N\B\L\ Passive      
+U4_stepper3-21 DRV8825-n\E\N\B\L\ Passive      
+U4_stepper4-21 DRV8825-n\E\N\B\L\ Passive      
+)
+(
+NetU1_25
+U1-25 ATmega644PA-AU-PC6 (TOSC1/PCINT22) IO           
+U5-1 FT230XS-TXD Passive      
+)
+(
+NetU1_26
+U1-26 ATmega644PA-AU-PC7 (TOSC2/PCINT23) IO           
+U5-4 FT230XS-RXD Passive      
+)
+(
+STOP3
+P2_LinearActuator3-2 Header 3-2 Passive      
+R7_LinearActuator3-1 Res-1 Passive      
+)
+(
+STOP2
+P2_LinearActuator2-2 Header 3-2 Passive      
+R7_LinearActuator2-1 Res-1 Passive      
+)
+(
+STOP1
+P2_LinearActuator1-2 Header 3-2 Passive      
+R7_LinearActuator1-1 Res-1 Passive      
+)
+(
+STEP3
+U1-44 ATmega644PA-AU-PB4 (S\S\/OC0B/PCINT12) IO           
+U4_stepper4-22 DRV8825-STEP Passive      
+)
+(
+STEP2
+U1-42 ATmega644PA-AU-PB2 (AIN0/INT2/PCINT10) IO           
+U4_stepper3-22 DRV8825-STEP Passive      
+)
+(
+STEP1
+U1-40 ATmega644PA-AU-PB0 (XCK0/T0/PCINT8) IO           
+U4_stepper2-22 DRV8825-STEP Passive      
+)
+(
+DIR3
+U1-1 ATmega644PA-AU-PB5 (PCINT13/MOSI) IO           
+U4_stepper4-20 DRV8825-DIR Passive      
+)
+(
+DIR2
+U1-43 ATmega644PA-AU-PB3 (AIN1/OC0A/PCINT11) IO           
+U4_stepper3-20 DRV8825-DIR Passive      
+)
+(
+DIR1
+U1-41 ATmega644PA-AU-PB1 (T1/CLKO/PCINT9) IO           
+U4_stepper2-20 DRV8825-DIR Passive      
+)
+(
+NetC13_stepper4_1
+C13_stepper4-1 Cap-1 Passive      
+U4_stepper4-3 DRV8825-VCP Passive      
+)
+(
+NetC14_stepper4_1
+C14_stepper4-1 Cap-1 Passive      
+R13_stepper4-2 RES_POT-BOT Passive      
+U4_stepper4-15 DRV8825-V3P3OUT Passive      
+)
+(
+NetC15_stepper4_1
+C15_stepper4-1 Cap-1 Passive      
+U4_stepper4-2 DRV8825-CP2 Passive      
+)
+(
+NetC15_stepper4_2
+C15_stepper4-2 Cap-2 Passive      
+U4_stepper4-1 DRV8825-CP1 Passive      
+)
+(
+NetP5_stepper4_1
+P5_stepper4-1 Header 4-1 Passive      
+U4_stepper4-5 DRV8825-AOUT1 Passive      
+)
+(
+NetP5_stepper4_2
+P5_stepper4-2 Header 4-2 Passive      
+U4_stepper4-7 DRV8825-AOUT2 Passive      
+)
+(
+NetP5_stepper4_3
+P5_stepper4-3 Header 4-3 Passive      
+U4_stepper4-10 DRV8825-BOUT1 Passive      
+)
+(
+NetP5_stepper4_4
+P5_stepper4-4 Header 4-4 Passive      
+U4_stepper4-8 DRV8825-BOUT2 Passive      
+)
+(
+NetR13_stepper4_3
+R13_stepper4-3 RES_POT-TAP Passive      
+U4_stepper4-12 DRV8825-AVREF Passive      
+U4_stepper4-13 DRV8825-BVREF Passive      
+)
+(
+NetR14_stepper4_2
+R14_stepper4-2 Res-2 Passive      
+U4_stepper4-6 DRV8825-ISENA Passive      
+)
+(
+NetR15_stepper4_2
+R15_stepper4-2 Res-2 Passive      
+U4_stepper4-9 DRV8825-ISENB Passive      
+)
+(
+NetC13_stepper3_1
+C13_stepper3-1 Cap-1 Passive      
+U4_stepper3-3 DRV8825-VCP Passive      
+)
+(
+NetC14_stepper3_1
+C14_stepper3-1 Cap-1 Passive      
+R13_stepper3-2 RES_POT-BOT Passive      
+U4_stepper3-15 DRV8825-V3P3OUT Passive      
+)
+(
+NetC15_stepper3_1
+C15_stepper3-1 Cap-1 Passive      
+U4_stepper3-2 DRV8825-CP2 Passive      
+)
+(
+NetC15_stepper3_2
+C15_stepper3-2 Cap-2 Passive      
+U4_stepper3-1 DRV8825-CP1 Passive      
+)
+(
+NetP5_stepper3_1
+P5_stepper3-1 Header 4-1 Passive      
+U4_stepper3-5 DRV8825-AOUT1 Passive      
+)
+(
+NetP5_stepper3_2
+P5_stepper3-2 Header 4-2 Passive      
+U4_stepper3-7 DRV8825-AOUT2 Passive      
+)
+(
+NetP5_stepper3_3
+P5_stepper3-3 Header 4-3 Passive      
+U4_stepper3-10 DRV8825-BOUT1 Passive      
+)
+(
+NetP5_stepper3_4
+P5_stepper3-4 Header 4-4 Passive      
+U4_stepper3-8 DRV8825-BOUT2 Passive      
+)
+(
+NetR13_stepper3_3
+R13_stepper3-3 RES_POT-TAP Passive      
+U4_stepper3-12 DRV8825-AVREF Passive      
+U4_stepper3-13 DRV8825-BVREF Passive      
+)
+(
+NetR14_stepper3_2
+R14_stepper3-2 Res-2 Passive      
+U4_stepper3-6 DRV8825-ISENA Passive      
+)
+(
+NetR15_stepper3_2
+R15_stepper3-2 Res-2 Passive      
+U4_stepper3-9 DRV8825-ISENB Passive      
+)
+(
+NetC13_stepper2_1
+C13_stepper2-1 Cap-1 Passive      
+U4_stepper2-3 DRV8825-VCP Passive      
+)
+(
+NetC14_stepper2_1
+C14_stepper2-1 Cap-1 Passive      
+R13_stepper2-2 RES_POT-BOT Passive      
+U4_stepper2-15 DRV8825-V3P3OUT Passive      
+)
+(
+NetC15_stepper2_1
+C15_stepper2-1 Cap-1 Passive      
+U4_stepper2-2 DRV8825-CP2 Passive      
+)
+(
+NetC15_stepper2_2
+C15_stepper2-2 Cap-2 Passive      
+U4_stepper2-1 DRV8825-CP1 Passive      
+)
+(
+NetP5_stepper2_1
+P5_stepper2-1 Header 4-1 Passive      
+U4_stepper2-5 DRV8825-AOUT1 Passive      
+)
+(
+NetP5_stepper2_2
+P5_stepper2-2 Header 4-2 Passive      
+U4_stepper2-7 DRV8825-AOUT2 Passive      
+)
+(
+NetP5_stepper2_3
+P5_stepper2-3 Header 4-3 Passive      
+U4_stepper2-10 DRV8825-BOUT1 Passive      
+)
+(
+NetP5_stepper2_4
+P5_stepper2-4 Header 4-4 Passive      
+U4_stepper2-8 DRV8825-BOUT2 Passive      
+)
+(
+NetR13_stepper2_3
+R13_stepper2-3 RES_POT-TAP Passive      
+U4_stepper2-12 DRV8825-AVREF Passive      
+U4_stepper2-13 DRV8825-BVREF Passive      
+)
+(
+NetR14_stepper2_2
+R14_stepper2-2 Res-2 Passive      
+U4_stepper2-6 DRV8825-ISENA Passive      
+)
+(
+NetR15_stepper2_2
+R15_stepper2-2 Res-2 Passive      
+U4_stepper2-9 DRV8825-ISENB Passive      
+)
+(
+NetC13_stepper1_1
+C13_stepper1-1 Cap-1 Passive      
+U4_stepper1-3 DRV8825-VCP Passive      
+)
+(
+NetC14_stepper1_1
+C14_stepper1-1 Cap-1 Passive      
+R13_stepper1-2 RES_POT-BOT Passive      
+U4_stepper1-15 DRV8825-V3P3OUT Passive      
+)
+(
+NetC15_stepper1_1
+C15_stepper1-1 Cap-1 Passive      
+U4_stepper1-2 DRV8825-CP2 Passive      
+)
+(
+NetC15_stepper1_2
+C15_stepper1-2 Cap-2 Passive      
+U4_stepper1-1 DRV8825-CP1 Passive      
+)
+(
+NetP5_stepper1_1
+P5_stepper1-1 Header 4-1 Passive      
+U4_stepper1-5 DRV8825-AOUT1 Passive      
+)
+(
+NetP5_stepper1_2
+P5_stepper1-2 Header 4-2 Passive      
+U4_stepper1-7 DRV8825-AOUT2 Passive      
+)
+(
+NetP5_stepper1_3
+P5_stepper1-3 Header 4-3 Passive      
+U4_stepper1-10 DRV8825-BOUT1 Passive      
+)
+(
+NetP5_stepper1_4
+P5_stepper1-4 Header 4-4 Passive      
+U4_stepper1-8 DRV8825-BOUT2 Passive      
+)
+(
+NetR13_stepper1_3
+R13_stepper1-3 RES_POT-TAP Passive      
+U4_stepper1-12 DRV8825-AVREF Passive      
+U4_stepper1-13 DRV8825-BVREF Passive      
+)
+(
+NetR14_stepper1_2
+R14_stepper1-2 Res-2 Passive      
+U4_stepper1-6 DRV8825-ISENA Passive      
+)
+(
+NetR15_stepper1_2
+R15_stepper1-2 Res-2 Passive      
+U4_stepper1-9 DRV8825-ISENB Passive      
+)
+(
+VIN
+F1-1 Fuse-1 Passive      
+P3-1 power_jack-1 Passive      
+)
+(
+NetC10_1
+C10-1 Cap-1 Passive      
+U3-1 AOZ1280-BST Passive      
+)
+(
+NetC10_2
+C10-2 Cap-2 Passive      
+D3-2 D Schottky-K Passive      
+L1-1 Inductor-1 Passive      
+U3-6 AOZ1280-LX Passive      
+)
+(
+NetC12_2
+C12-2 Cap-2 Passive      
+FB1-1 Ferrite Bead-1 Passive      
+R9-2 Res-2 Passive      
+U3-5 AOZ1280-VIN Passive      
+)
+(
+NetD4_1
+D4-1 LED2-A Passive      
+R11-1 Res-1 Passive      
+)
+(
+NetD5_1
+D5-1 LED2-A Passive      
+R12-1 Res-1 Passive      
+)
+(
+NetR8_1
+R8-1 Res-1 Passive      
+R10-2 Res-2 Passive      
+U3-3 AOZ1280-FB Passive      
+)
+(
+NetR9_1
+R9-1 Res-1 Passive      
+SW2-2 DPDT-COMMON1 Passive      
+U3-4 AOZ1280-EN Passive      
+)
+(
++12V
+P4-1 Header 2X2-1 Passive      
+)
+(
+NetP2_LinearActuator3_1
+P2_LinearActuator3-1 Header 3-1 Passive      
+R6_LinearActuator3-1 Res-1 Passive      
+)
+(
+NetP2_LinearActuator2_1
+P2_LinearActuator2-1 Header 3-1 Passive      
+R6_LinearActuator2-1 Res-1 Passive      
+)
+(
+NetP2_LinearActuator1_1
+P2_LinearActuator1-1 Header 3-1 Passive      
+R6_LinearActuator1-1 Res-1 Passive      
+)
+(
+NetD1_Hot End_1
+D1_Hot End-1 LED3-A Passive      
+R5_Hot End-1 Res-1 Passive      
+)
+(
+NetP1_Hot End_1
+P1_Hot End-1 Header 4-1 Passive      
+R2_Hot End-1 Res-1 Passive      
+R3_Hot End-2 Res-2 Passive      
+)
+(
+NetP1_Hot End_4
+P1_Hot End-4 Header 4-4 Passive      
+U2_Hot End-8 irf8714pbf-D Passive      
+)
+(
+NetR4_Hot End_1
+R4_Hot End-1 Res-1 Passive      
+U2_Hot End-4 irf8714pbf-G Passive      
+)
+(
+NetD1_Heated Bed_1
+D1_Heated Bed-1 LED3-A Passive      
+R5_Heated Bed-1 Res-1 Passive      
+)
+(
+NetP1_Heated Bed_1
+P1_Heated Bed-1 Header 4-1 Passive      
+R2_Heated Bed-1 Res-1 Passive      
+R3_Heated Bed-2 Res-2 Passive      
+)
+(
+NetP1_Heated Bed_4
+P1_Heated Bed-4 Header 4-4 Passive      
+U2_Heated Bed-8 irf8714pbf-D Passive      
+)
+(
+NetR4_Heated Bed_1
+R4_Heated Bed-1 Res-1 Passive      
+U2_Heated Bed-4 irf8714pbf-G Passive      
+)
+(
+8
+U2_Heated Bed-5 irf8714pbf-D Passive      
+U2_Heated Bed-6 irf8714pbf-D Passive      
+U2_Heated Bed-7 irf8714pbf-D Passive      
+U2_Hot End-5 irf8714pbf-D Passive      
+U2_Hot End-6 irf8714pbf-D Passive      
+U2_Hot End-7 irf8714pbf-D Passive      
+)
+(
+3
+U2_Heated Bed-1 irf8714pbf-S Passive      
+U2_Heated Bed-2 irf8714pbf-S Passive      
+U2_Hot End-1 irf8714pbf-S Passive      
+U2_Hot End-2 irf8714pbf-S Passive      
+)
+(
++24V
+C9-2 Cap Pol-2 Passive      
+C13_stepper1-2 Cap-2 Passive      
+C13_stepper2-2 Cap-2 Passive      
+C13_stepper3-2 Cap-2 Passive      
+C13_stepper4-2 Cap-2 Passive      
+D2-2 D Schottky-K Passive      
+F1-2 Fuse-2 Passive      
+FB1-2 Ferrite Bead-2 Passive      
+P1_Heated Bed-3 Header 4-3 Passive      
+P1_Hot End-3 Header 4-3 Passive      
+R11-2 Res-2 Passive      
+U4_stepper1-4 DRV8825-VMA Passive      
+U4_stepper1-11 DRV8825-VMB Passive      
+U4_stepper2-4 DRV8825-VMA Passive      
+U4_stepper2-11 DRV8825-VMB Passive      
+U4_stepper3-4 DRV8825-VMA Passive      
+U4_stepper3-11 DRV8825-VMB Passive      
+U4_stepper4-4 DRV8825-VMA Passive      
+U4_stepper4-11 DRV8825-VMB Passive      
+)
+(
+NetC1_2
+C1-2 Cap-2 Passive      
+U1-8 ATmega644PA-AU-XTAL1 Passive      
+Y1-3 ABMM2-3 Passive      
+)
+(
+NetC2_2
+C2-2 Cap-2 Passive      
+U1-7 ATmega644PA-AU-XTAL2 Passive      
+Y1-1 ABMM2-1 Passive      
+)
+(
+NetC3_2
+C3-2 Cap-2 Passive      
+U1-29 ATmega644PA-AU-AREF Power        
+)
+(
+NetR1_1
+R1-1 Res-1 Passive      
+SW1-2 Tactile Switch 6mm-2 Passive      
+U1-4 ATmega644PA-AU-R\E\S\E\T\ Input        
+)
+(
+GND
+C1-1 Cap-1 Passive      
+C2-1 Cap-1 Passive      
+C3-1 Cap-1 Passive      
+C4-2 Cap-2 Passive      
+C5-2 Cap-2 Passive      
+C6-2 Cap-2 Passive      
+C7-2 Cap-2 Passive      
+C8_Heated Bed-2 Cap-2 Passive      
+C8_Hot End-2 Cap-2 Passive      
+C9-1 Cap Pol-1 Passive      
+C11-1 Cap-1 Passive      
+C12-1 Cap-1 Passive      
+C14_stepper1-2 Cap-2 Passive      
+C14_stepper2-2 Cap-2 Passive      
+C14_stepper3-2 Cap-2 Passive      
+C14_stepper4-2 Cap-2 Passive      
+C16-1 Cap-1 Passive      
+C17-1 Cap-1 Passive      
+C18-1 Cap-1 Passive      
+C19-1 Cap-1 Passive      
+C20-1 Cap-1 Passive      
+C21-1 Cap-1 Passive      
+D1_Heated Bed-2 LED3-K Passive      
+D1_Hot End-2 LED3-K Passive      
+D2-1 D Schottky-A Passive      
+D3-1 D Schottky-A Passive      
+D4-2 LED2-K Passive      
+D5-2 LED2-K Passive      
+P1_Heated Bed-2 Header 4-2 Passive      
+P1_Hot End-2 Header 4-2 Passive      
+P2_LinearActuator1-3 Header 3-3 Passive      
+P2_LinearActuator2-3 Header 3-3 Passive      
+P2_LinearActuator3-3 Header 3-3 Passive      
+P3-2 power_jack-2 Passive      
+P4-2 Header 2X2-2 Passive      
+P4-4 Header 2X2-4 Passive      
+P6-5 USB Micro B-GND Passive      
+P6-6 USB Micro B-Sheild Passive      
+R10-1 Res-1 Passive      
+R13_stepper1-1 RES_POT-TOP Passive      
+R13_stepper2-1 RES_POT-TOP Passive      
+R13_stepper3-1 RES_POT-TOP Passive      
+R13_stepper4-1 RES_POT-TOP Passive      
+R14_stepper1-1 Res-1 Passive      
+R14_stepper2-1 Res-1 Passive      
+R14_stepper3-1 Res-1 Passive      
+R14_stepper4-1 Res-1 Passive      
+R15_stepper1-1 Res-1 Passive      
+R15_stepper2-1 Res-1 Passive      
+R15_stepper3-1 Res-1 Passive      
+R15_stepper4-1 Res-1 Passive      
+SW1-1 Tactile Switch 6mm-1 Passive      
+SW2-1 DPDT-NC1 Passive      
+U1-6 ATmega644PA-AU-GND Power        
+U1-18 ATmega644PA-AU-GND Power        
+U1-28 ATmega644PA-AU-GND Power        
+U1-39 ATmega644PA-AU-GND Power        
+U2_Heated Bed-3 irf8714pbf-S Passive      
+U2_Hot End-3 irf8714pbf-S Passive      
+U3-2 AOZ1280-GND Passive      
+U4_stepper1-14 DRV8825-GND Passive      
+U4_stepper1-28 DRV8825-GND Passive      
+U4_stepper1-29 DRV8825-GND Passive      
+U4_stepper2-14 DRV8825-GND Passive      
+U4_stepper2-28 DRV8825-GND Passive      
+U4_stepper2-29 DRV8825-GND Passive      
+U4_stepper3-14 DRV8825-GND Passive      
+U4_stepper3-28 DRV8825-GND Passive      
+U4_stepper3-29 DRV8825-GND Passive      
+U4_stepper4-14 DRV8825-GND Passive      
+U4_stepper4-28 DRV8825-GND Passive      
+U4_stepper4-29 DRV8825-GND Passive      
+U5-5 FT230XS-GND Passive      
+U5-13 FT230XS-GND Passive      
+Y1-2 ABMM2-2 Passive      
+Y1-4 ABMM2-4 Passive      
+)
+(
++3.3V
+C4-1 Cap-1 Passive      
+C5-1 Cap-1 Passive      
+C6-1 Cap-1 Passive      
+C7-1 Cap-1 Passive      
+C11-2 Cap-2 Passive      
+L1-2 Inductor-2 Passive      
+P4-3 Header 2X2-3 Passive      
+R1-2 Res-2 Passive      
+R2_Heated Bed-2 Res-2 Passive      
+R2_Hot End-2 Res-2 Passive      
+R6_LinearActuator1-2 Res-2 Passive      
+R6_LinearActuator2-2 Res-2 Passive      
+R6_LinearActuator3-2 Res-2 Passive      
+R7_LinearActuator1-2 Res-2 Passive      
+R7_LinearActuator2-2 Res-2 Passive      
+R7_LinearActuator3-2 Res-2 Passive      
+R8-2 Res-2 Passive      
+R12-2 Res-2 Passive      
+U1-5 ATmega644PA-AU-VCC Power        
+U1-17 ATmega644PA-AU-VCC Power        
+U1-27 ATmega644PA-AU-AVCC Power        
+U1-38 ATmega644PA-AU-VCC Power        
+U4_stepper1-16 DRV8825-\n\R\E\S\E\T\ Passive      
+U4_stepper1-17 DRV8825-\n\S\L\E\E\P\ Passive      
+U4_stepper1-24 DRV8825-MODE0 Passive      
+U4_stepper1-25 DRV8825-MODE1 Passive      
+U4_stepper1-26 DRV8825-MODE2 Passive      
+U4_stepper2-16 DRV8825-\n\R\E\S\E\T\ Passive      
+U4_stepper2-17 DRV8825-\n\S\L\E\E\P\ Passive      
+U4_stepper2-24 DRV8825-MODE0 Passive      
+U4_stepper2-25 DRV8825-MODE1 Passive      
+U4_stepper2-26 DRV8825-MODE2 Passive      
+U4_stepper3-16 DRV8825-\n\R\E\S\E\T\ Passive      
+U4_stepper3-17 DRV8825-\n\S\L\E\E\P\ Passive      
+U4_stepper3-24 DRV8825-MODE0 Passive      
+U4_stepper3-25 DRV8825-MODE1 Passive      
+U4_stepper3-26 DRV8825-MODE2 Passive      
+U4_stepper4-16 DRV8825-\n\R\E\S\E\T\ Passive      
+U4_stepper4-17 DRV8825-\n\S\L\E\E\P\ Passive      
+U4_stepper4-24 DRV8825-MODE0 Passive      
+U4_stepper4-25 DRV8825-MODE1 Passive      
+U4_stepper4-26 DRV8825-MODE2 Passive      
+)

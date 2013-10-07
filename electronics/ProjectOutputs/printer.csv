@@ -1,0 +1,71 @@
+Comment	Description	Designator	Footprint	LibRef	Quantity	Value					
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+Res	Resistor 0805	R1, R2, R8_LinearActuator1, R8_LinearActuator2, R8_LinearActuator3, R9_LinearActuator1, R9_LinearActuator2, R9_LinearActuator3, R15, R17_stepper1, R17_stepper2, R17_stepper3, R17_stepper4	J1-0603	Res	13	220R	603	2073428	0.003		x
+Res	Resistor 0805	R3, R10_LinearActuator1, R10_LinearActuator2, R10_LinearActuator3, R12, R25	J1-0603	Res	6	10K	603	2073356	0.002		x
+Res	Resistor 0805	R4_Heated Bed, R4_Hot End	J1-0603	Res	2	4K7	603	2073514	0.004		x
+Res	Resistor 0805	R5_Heated Bed, R5_Hot End, R7_Heated Bed, R7_Hot End, R14	J1-0603	Res	5	1K	603	2073354	0.004		x
+Res	Resistor 0805	R6_Heated Bed, R6_Hot End, R20, R23	J1-0603	Res	4	270R	603	2074225	0.004		x
+Res	Resistor 0805	R11	J1-0603	Res	1	49.9k	603	2059470	0.002		x
+Res	Resistor 0805	R13	J1-0603	Res	1	15.8k	603	2073398	0.005		x
+Res	Resistor 0805	R18_stepper1, R18_stepper2, R18_stepper3, R18_stepper4, R19_stepper1, R19_stepper2, R19_stepper3, R19_stepper4	C1206	Res	8	0.1R	1206	2328138	0.1		x
+Res	Resistor 0805	R21, R22	J1-0603	Res	2	27R	603	2074231	0.006		x
+Res	Resistor 0805	R24	J1-0603	Res	1	1M	603	2073358	0.002		x
+RES_POT		R16_stepper1, R16_stepper2, R16_stepper3, R16_stepper4	RES_SMD	RES_POT	4	10K		1689863	0.45		
+											
+											
+											
+Cap Pol	Polarized Capacitor (Axial)	C9	Capacitor Nichi CL 10x10	Cap Pol	1	470uF 25V	10mm Can	9695800	1.89		x
+Cap	Capacitor	C1, C2	CAPC2012L-3D	Cap	2	18pF	805	1759194	0.029		x
+Cap	Capacitor	C3, C4, C5, C6, C7, C8_Heated Bed, C8_Hot End, C13_stepper1, C13_stepper2, C13_stepper3, C13_stepper4, C19, C20	1608[0603]	Cap	13	100nF	603	1844241	0.019		x
+Cap	Capacitor	C10, C15_stepper1, C15_stepper2, C15_stepper3, C15_stepper4, C16	1608[0603]	Cap	6	10nF	603	1709947	0.05		x
+Cap	Capacitor	C11	CAPC2012L-3D	Cap	1	22uF 6.3V	805	2309030	0.168		x
+Cap	Capacitor	C12	CAPC2012L-3D	Cap	1	10uF	805	2309029	0.075		
+Cap	Capacitor	C14_stepper1, C14_stepper2, C14_stepper3, C14_stepper4, C22, C23	1608[0603]	Cap	6	100pF	603	8819866	0.009		
+Cap	Capacitor	C17, C18	1608[0603]	Cap	2	47pF	603	1582668	0.009		
+Cap	Capacitor	C21	1608[0603]	Cap	1	4.7uF	603	2354102	0.11		
+											
+Ferrite Bead		FB1, FB2	603	Ferrite Bead	2	-	603	1515699	0.013		x
+											
+D Schottky	Schottky Diode	D5, D6	DO-214-AA	D Schottky	2			2301798	0.72		
+Fuse	Fuse	F1	Fuse Holder	Fuse	1						
+											
+Inductor	Inductor	L1	Inductor 5020	Inductor	1	10mH		2309155	0.87		
+											
+											
+											
+											
+power_jack		P5	PowerJack	power_jack	1			185451401	1.75		
+USB Micro B		P8	USB micro B	USB Micro B	1			2293836	0.945		
+											
+											
+QNPN	NPN Bipolar Transistor	Q1_LinearActuator1, Q1_LinearActuator2, Q1_LinearActuator3	SOT-23B_N	QNPN	3			1798052	0.035		
+MOSFET-N	N-Channel MOSFET	Q2, Q3	SOT23	MOSFET-N	2			1081307	0.178		
+											
+											
+											
+											
+											
+											
+LED3	Typical BLUE SiC LED	D1, D2, D3_Heated Bed, D3_Hot End, D10, D11	LED 0805	LED3	15		805	2099236	0.129		
+											
+											
+											
+											
+Tactile Switch 6mm		SW1	Switch 6mm	Tactile Switch 6mm	1			1712975	0.21		
+DPDT	Switch	SW2	MCLSS22	DPDT	1			1522046	0.52		
+ATmega644PA-AU	8-bit AVR Microcontroller, 64KB Flash, 2KB EEPROM, 4KB SRAM, 44-pin TQFP, Industrial Grade (-40°C to 85°C)	U1	44A_N	ATmega644PA-AU	1			1972106	13.97		
+irf8714pbf		U2_Heated Bed, U2_Hot End	SO-8_M	irf8714pbf	2			1013430	0.215		
+AOZ1280		U3	SOT23-6	AOZ1280	1						
+DRV8825		U4_stepper1, U4_stepper2, U4_stepper3, U4_stepper4	DVR	DRV8825	4			1903642	7.86		
+FT230XS		U5	SSOP16_N	FT230XS	1			2081321	2.84		
+ABMM2		Y1	ABMM2	ABMM2	1			1611798	0.358		
+Buzzer		BZ1	buzzer	Buzzer	1						

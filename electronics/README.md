@@ -1,4 +1,4 @@
 Deltabot Project Electronics
 ============================
 
-Coming soon!
+Design was created with Altium Designer
