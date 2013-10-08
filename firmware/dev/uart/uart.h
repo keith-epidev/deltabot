@@ -6,16 +6,17 @@
 #include <stdlib.h>
 
 typedef struct Uart{
-	Pin *tx;
-	Pin *rx;
 	CircularBuffer *in;
 	CircularBuffer *out;
+	char new_line;
 }Uart;
 
 
-Uart *uart_init(Pin *tx, Pin *rx);
-void uart_put(Uart *uart, char c);
-void uart_putstr(Uart *uart, char *str);
-char uart_receive() ;
+Uart *uart_init();
 
+void uart_write(char *data);
+void uart_put(char data);
+byte uart_read();
+void uart_get();
+char uart_new_line();
 #endif

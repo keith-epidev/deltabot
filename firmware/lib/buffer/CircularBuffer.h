@@ -1,6 +1,8 @@
 #ifndef CIRCULARBUFFER_H
 #define CIRCULARBUFFER_H
 
+#include "etc/byte.h"
+
 typedef struct CircularBuffer{
 	char *buffer;
 	unsigned int start;

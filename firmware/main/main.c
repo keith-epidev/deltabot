@@ -1,59 +1,31 @@
-#include <msp430.h>
 #include "etc/byte.h"
+#include "etc/config.h"
 #include "sys/port.h"
-#include "dev/uart/uart.h"
+#include "dev/stepper/stepper.h"
+#include <util/delay.h>
 
-#define speed 100000
 
 int main(void){
-	WDTCTL = WDTPW + WDTHOLD;	// Stop WDT
+
+Stepper *stepper_e = stepper_init(e_step,e_dir,e_enable);
+//Stepper *stepper_x = stepper_init(x_step,x_dir,x_enable);
+Stepper *stepper_y = stepper_init(y_step,y_dir,y_enable);
+
+Stepper *stepper_z = stepper_init(z_step,z_dir,z_enable);
+stepper_start_frame();
+
+while(1);
 
 
-	Pin P1_4 = pin_new(&P1,4);	//TXD
-	Pin P1_5 = pin_new(&P1,5);	//RXD
-	
-	Uart *uart = uart_init(&P1_4,&P1_5);
 
-	uart_putstr(uart,"\0\0\0\0\r\n");
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	uart_putstr(uart,"UART init\r\n");
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	uart_putstr(uart,"Spamming:\r\n");
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-	__delay_cycles (speed);
-
+//	Pin PD_0 = pin_new(&P[3],0);
+//	pin_config_out(&PD_0);
+//	pin_low(&PD_0);
+/*
 	while(1){
-		//1st chip on
-
-	uart_put(uart,'a');
-	__delay_cycles (speed);
-	uart_put(uart,'b');
-	__delay_cycles (speed);
-	uart_put(uart,'c');
-	__delay_cycles (speed);
-	uart_put(uart,' ');
-	__delay_cycles (speed);
-	
-	__delay_cycles (speed);
-	uart_putstr(uart,"String \r\n");
-	__delay_cycles (speed);
-	uart_putstr(uart,"\r\n");
-	__delay_cycles (speed);
+	pin_low(&PD_0);
+	delay_ms(100000);
 	}
-
+*/
 	return 1;
 }

@@ -1,226 +1,87 @@
 #include "uart.h"
+#include "etc/config.h"
+#include <avr/interrupt.h>
 
-#define   TPB      13
-#define   TPH      (TPB - TPB/2)
-#define RED_LED	b7
-#define GRN_LED	b1
+// Define baud rate
+#define USART_BAUDRATE 38400   
+#define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
 
-char bitcnt = 0;
-char bitcnt_rx = 0;
-int TXWord;
-int RXByte;
 
+volatile char value;
 Uart *target;
 
-static char buffer[64];
+ISR(USART0_RX_vect){
+	value = UDR0;             //read UART register into value
+	if(value == '\r')
+	value = '\0';
+
+	circular_buffer_put(target->in,value);
+	uart_put(value);//echo
+	
+	if(value == '\0'){
+		uart_write("\r\n");
+		target->new_line = 1;
+	}
+}
+
+ISR(USART0_TX_vect){
+	if(!circular_buffer_isempty(target->out))
+		UDR0 = circular_buffer_get(target->out);
+
+}
 
 
-void prep_tx(char c);
-void prep_rx( void );
-
-Uart* uart_init(Pin *tx, Pin *rx){
+Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	buffer[0] = 'a';
+	uart->in = circular_buffer_new(64);
+	uart->out = circular_buffer_new(64);
+	uart->new_line = 0;
 
-	uart->tx = tx;
-	uart->rx = rx;
-	uart->in = circular_buffer_new(2);
-	uart->out = circular_buffer_new(16);
+	UBRR0L = BAUD_PRESCALE;
+	UBRR0H = (BAUD_PRESCALE >> 8); 
+	UCSR0B = ((1<<TXEN0)|(1<<RXEN0) | (1<<RXCIE0) | (1<<TXCIE0) );
 
-	//Uart temp = {tx,rx,circular_buffer_new(16),circular_buffer_new(16)};
-	pin_config_out(tx);
-	pin_config_alt(rx);
-	pin_config_in(rx);
 
-	/* set up the clocks for 1 Mhz */
-	BCSCTL1 = CALBC1_1MHZ;
-	DCOCTL = CALDCO_1MHZ;
-	BCSCTL2 &= ~(DIVS_3);
-	/* Set timer A to use count up mode 4 Mhz / 8 = 500 Khz. */
-	TACTL = TASSEL_2 + MC_2 + ID_3 + TACLR;
-	/* Set ticks-per-bit to specify communication speed */
-	TACCR0 = TPB;
-
+	sei();
 	target = uart;
 
-	//prep_rx();
-
-	return uart;//temp;
+	return uart;;
 }
 
 
-////////////// send stuff
+void uart_get(void){
+	target->new_line = 0;
+}
+
+void uart_write(char *data){
+
+	circular_buffer_putstr(target->out,data);
 
 
-void prep_tx(char c){
-
-	/* load the byte */
-	TXWord = c;
-	/* add stop bit */
-	TXWord |= 0x100;
-	/* add start bit */
-	TXWord <<= 1;    
-
-	bitcnt = 10;
-
-	/* clear the counter, clear interrupt flag, and tell Timer A0 to
-	*      * start triggering interrupts
-	*           */
-	TACTL |= TACLR;
-	TACCTL0 &= ~CCIFG;
-	TACCTL0 |= CCIE;
-
-   /* Set ticks-per-bit to specify communication speed */
-    TACCR0 = TPB;
-   
-    /* clear interrupt flag, and tell Timer A0 capture control to
-     * start triggering interrupts
-     */
-    TACCTL0 &= ~CCIFG;
-    TACCTL0 |= CCIE;
-
-
-	/* sleep until message sent */
-	while( TACCTL0 & CCIE ) {
-	__bis_SR_register( LPM0_bits + GIE );
-	}
+	if((UCSR0A &(1<<UDRE0)) != 0)
+	UDR0 = circular_buffer_get(target->out);
 
 }
 
-
-
-void uart_put(Uart *uart, char c){
-	if(bitcnt == 0)
-		prep_tx(c);
-	else
-	circular_buffer_put(uart->out,c);
-
+char uart_new_line(){
+	return target->new_line;
 }
 
-void uart_putstr(Uart *uart, char *str){
-	/*
-	if(bitcnt == 0){
-		prep_tx(str[0]);
-		circular_buffer_putstr(uart->out,&str[1]);
-	}else
-		circular_buffer_putstr(uart->out,str);
-*/
-	circular_buffer_putstr(uart->out,str);
-	if(bitcnt == 0)
-		prep_tx(circular_buffer_get(uart->out));
-		
+void uart_put(char data){
+
+	circular_buffer_put(target->out,data);
+
+
+	if((UCSR0A &(1<<UDRE0)) != 0)
+	UDR0 = circular_buffer_get(target->out);
 }
 
 
-
-
-
-void TimerA0 (void) __attribute__((interrupt(TIMER0_A0_VECTOR)));
-void TimerA0(void) {
- CCR0 += TPB;
-
-
-	if( ! bitcnt  && circular_buffer_isempty(target->out)  ) {
-		/* no bits left, turn off interrupts and wake up */
-		TACCTL0 &= ~ CCIE;
-		__bic_SR_register_on_exit( LPM0_bits );
-		return;
-	}else 
-	if( ! bitcnt && !circular_buffer_isempty(target->out) ){
-		TACCTL0 &= ~ CCIE;
-		__bic_SR_register_on_exit( LPM0_bits );
-		prep_tx(circular_buffer_get(target->out));
-		return;
-	}
-	else {
-		/* send least significant bit */
-		if( TXWord & 0x01 ) {
-			pin_high(target->tx);
-	} else {
-			pin_low(target->tx);
-	}
-
-	/* shift word to remove one bit */
-	TXWord >>= 1;
-	bitcnt --;
-	TACCTL0 &= ~CCIFG;
-	}
+      // Wait until a byte has been received and return received data 
+byte uart_read(){
+	while((UCSR0A &(1<<RXC0)) == 0);
+	return UDR0;
 }
 
-
-/////////////// recieve part
-
-void prep_rx(void){
-  bitcnt_rx = 8;
-    CCTL1 = SCS + OUTMOD0 + CM_2 + CAP + CCIE;
-    CCTL1 &= ~CCIFG;
-
-}
-
-/**
- * Receives a single character.
- */
-char uart_receive() {
-     
-    prep_rx();
-   
-    while (TACCTL1 & CCIE) {
-      /* go to sleep and wait for data */
-      __bis_SR_register( LPM0_bits + GIE );
-    }
-   
-    return RXByte;
-}
-
-
-
-
-
-
-
-void TimerA1 (void) __attribute__((interrupt(TIMER0_A1_VECTOR)));
-void TimerA1(void) {
-
-      /* add ticks per bit to trigger again on next bit in stream */
-    CCR1 += TPB;
-     
-    /* If we just caught the 0 start bit, then turn off capture
-     * mode (it'll be all compares from here forward) and add
-     * ticks-per-half so we'll catch signals in the middle of
-     * each bit.
-     */
-    if( CCTL1 & CAP ) {
-        /* 8 bits pending */
-        bitcnt_rx = 8;
- 
-        /* next interrupt in 1.5 bits (i.e. in middle of next bit) */
-        CCR1 += TPH;
- 
-        /* reset capture mode and interrupt flag */
-        CCTL1 &= ~ ( CAP + CCIFG );      
-    } else {
-          /* Otherwise we need to catch another bit.  We'll shift right
-           * the currently received data, and add new bits on the left.
-           */
-          RXByte >>= 1;
-          if( CCTL1 & SCCI ) {
-              RXByte |= 0x80;
-          }
-          bitcnt_rx --;
-     
-          /* last bit received */
-          if( ! bitcnt_rx ) {       
-            //  P1OUT &= ~(LED);     // for testing
-              TACCTL1 &= ~CCIE;
-              __bic_SR_register_on_exit( LPM0_bits );
-            }
-    }  
- 
-    /* reset the interrupt flag */
-    CCTL1 &= ~CCIFG;
-
-
-
-}
