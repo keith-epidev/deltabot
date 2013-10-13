@@ -215,20 +215,28 @@ module traxxis_mount(){
 color("white"){
 difference(){
 union(){
-translate([-3,5,0]) cube([6,14,8]);
+translate([-3,5,0]) cube([6,13,6]);
 
 for(i = [-1,1]){
-translate([i*(7+6),0,0]) translate([-3,0,0]) cube([6,19,8]);
+translate([i*(7+6),0,0]) translate([-3,0,0]) cube([6,18,6]);
 }
 }
 
-translate([-20,15,4])
+
+translate([-20,15,3])
 rotate([0,90,0]){
 cylinder(r=2,h=40);
 //bores
-translate([0,0,3]) cylinder(r=3,h=3);
-translate([0,0,34]) cylinder(r=3,h=3);
+//translate([0,0,3]) cylinder(r=3,h=2);
+//translate([0,0,35]) cylinder(r=3,h=2);
+
+
+
+
 }
+translate([10,12,0]) fillet_face(2,4,6,12);
+translate([-16,12,0]) fillet_face(2,4,6,12);
+translate([-3,12,0]) fillet_face(2,4,6,12);
 }
 
 

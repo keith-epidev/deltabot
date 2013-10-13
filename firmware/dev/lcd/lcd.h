@@ -6,7 +6,7 @@
 #include "lib/delay/delay.h"
 
 typedef struct LCD{
-	Serial serial;	//	Serial serial;
+	Spi *spi;	//	Serial serial;
 	int col;
 	int row;
 	Pin *rst;

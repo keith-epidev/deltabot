@@ -1,5 +1,7 @@
 include <../../lib/LM8UU.scad>;
+include <bracket.scad>;
 include <../../hardware/extruder.scad>
+$fn = 30;
 
 module carriage_clamp(){
 color("white"){
@@ -29,9 +31,12 @@ difference(){
 for(i = [0,1])
 mirror([i,0,0]){
 difference(){
-translate([0,-10,0]) cube([45,20,8]);
-translate([27,0,-1]) cylinder(r=15/2,h=20);
-translate([27,-4,-1]) cube([20,8,20]);
+translate([0,-10,0]) cube([41,20,24]);
+translate([27,0,-1]) cylinder(r=15/2,h=26);
+translate([27,-4,-1]) cube([20,8,26]);
+
+translate([41,0,0]) rotate([270,180,0])fillet(5,25);
+translate([41,0,24]) rotate([90,180,0])fillet(5,25);
 
 
 }
@@ -41,9 +46,9 @@ translate([27,-4,-1]) cube([20,8,20]);
 //translate([27,0,0]){LM8UU();}
 }
 
-translate([4,-7,-1]) cube([12,14,20]);
-translate([-3,-3,-1]) cube([8,6,20]);
-translate([-10,-3,-1]) cube([4,6,20]);
+translate([4,-7,-1]) cube([12,14,26]);
+translate([-3,-3,-1]) cube([8,6,26]);
+translate([-10,-3,-1]) cube([4,6,26]);
 }
 translate([0,4,0]) 
 difference(){
@@ -52,22 +57,24 @@ translate([0,-1,-1]) cube([20,5,12]);
 }
 }
 
+for(j = [0,16])
 for(i = [0,1])
+translate([0,0,j])
 mirror([i,0,0]){
-translate([-41,20,4]) rotate([90,0,0]) cylinder(r=1.5,h=40);
-translate([-41,14,4]) rotate([90,0,0]) cylinder(r=3,h=3);
-translate([-41,-11,4]) rotate([90,0,0]) cylinder(r=3,h=3);
+translate([-37,20,4]) rotate([90,0,0]) cylinder(r=1.6,h=40);
+translate([-37,14,4]) rotate([90,0,0]) cylinder(r=3,h=6);
+translate([-37,-8,4]) rotate([90,0,0]) cylinder(r=3,h=5);
 }
 
 for(i = [0,1])
 mirror([0,i,0]){
-translate([-8,6,-1]){ rotate([0,0,0]) cylinder(r=1.7,h=10);
-
-hex(s=4,d=5);
+translate([-8,6,-1]){ rotate([0,0,0]) cylinder(r=1.7,h=30);
+// hex(s=4,d=5);
+cylinder(r=3.5,h=4);
 }
 }
 //end stop pole
-translate([0,8,-1]){ rotate([0,0,0]) cylinder(r=1.5,h=10);
+translate([0,13,-1]){ rotate([0,0,0]) cylinder(r=1.5,h=10);
 
 }
 

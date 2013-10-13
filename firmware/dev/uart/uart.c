@@ -35,8 +35,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(64);
-	uart->out = circular_buffer_new(64);
+	uart->in = circular_buffer_new(32);
+	uart->out = circular_buffer_new(128);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;
@@ -78,6 +78,10 @@ void uart_put(char data){
 	UDR0 = circular_buffer_get(target->out);
 }
 
+void uart_put_printf(char data, FILE *stream) {
+    if (data == '\n') uart_put('\r'); //new line for linux term
+    uart_put(data);
+}
 
       // Wait until a byte has been received and return received data 
 byte uart_read(){

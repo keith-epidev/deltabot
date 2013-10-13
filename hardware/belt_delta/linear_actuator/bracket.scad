@@ -1,4 +1,4 @@
-$fn = 30;
+$fn = 40;
 
 module fillet(r, h) {
     translate([r / 2, r / 2, 0])
@@ -11,6 +11,64 @@ module fillet(r, h) {
 
         }
 }
+
+
+module fillet_face(r,h,s,x){
+
+
+//front
+for(i = [0,1]){
+translate([0,0,i*s])
+rotate([0,i*90,0])
+translate([0,s,s/2]) {
+rotate([180,0,0])		fillet(r,s);
+translate ([s,0,0]) rotate([180,180,0])		fillet(r,s);
+}
+}
+
+
+
+//sides
+translate([0,0,0])
+for(i = [0,1]){
+	translate([0,0,i*s])
+	rotate([i*180,0,0])
+	union(){
+	rotate([90,0,0])		fillet(r,x);
+	 translate([s,0,0]) rotate([90,0,180])		fillet(r,x);
+	}
+}
+
+union(){
+for(i = [0,1]){
+
+rotate([0,i*180,0])
+translate([-i*s,0,-i*s]){
+
+translate([s-r,s-r,s-r]){
+	difference(){
+	cube([r,r,r]);
+	sphere(r);
+	}
+}
+
+translate([s-r,s-r,r]){
+	rotate([0,90,0])
+	difference(){
+	cube([r,r,r]);
+	sphere(r);
+	}
+
+
+}
+
+}
+
+}
+	}
+	
+}
+
 
 
 module bracket_bottom(){
@@ -167,5 +225,5 @@ union(){
 
 
 
-bracket_top();
+//bracket_top();
 //bracket_bottom();

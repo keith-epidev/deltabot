@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: pcb.PcbDoc   10/4/2013  1:31:40 AM
+NCDrill File Report For: pcb.PcbDoc   10/8/2013  2:30:11 AM
 ---------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -11,7 +11,7 @@ Tool         Hole Size           Hole Type     Hole Count Plated       Tool Trav
 T1        23.62mil (0.59995mm)     Round          48               4.26 Inch (108.19 mm)
 T2        23.62mil (0.59995mm)     Slot           2                284.76 Inch (7232.85 mm)
 T3        27.56mil (0.70002mm)     Round          8                2.08 Inch (52.75 mm)
-T4        28mil (0.7112mm)         Round          76               24.86 Inch (631.38 mm)
+T4        28mil (0.7112mm)         Round          76               24.94 Inch (633.39 mm)
 T5        31.5mil (0.8001mm)       Round          2                0.32 Inch (8.08 mm)
 T6        33.46mil (0.84988mm)     Round          2                0.20 Inch (5.00 mm)
 T7        35.43mil (0.89992mm)     Round          59               12.41 Inch (315.34 mm)
@@ -20,6 +20,6 @@ T9        39.37mil (1mm)           Slot           3                284.06 Inch (
 T10       46.06mil (1.16992mm)     Round          4                0.89 Inch (22.70 mm)
 T11       118.11mil (2.99999mm)    Round          4                10.55 Inch (267.86 mm)
 ---------------------------------------------------------------------------
-Totals                                            212              624.99 Inch (15874.83 mm)
+Totals                                            212              625.07 Inch (15876.85 mm)
 
-Total Processing Time (hh:mm:ss) : 00:00:01
+Total Processing Time (hh:mm:ss) : 00:00:00

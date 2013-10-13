@@ -18,9 +18,10 @@
 #define e_dir PB2
 #define e_enable PB3
 #define e_step PB4
+#define SS PB4
 #define MOSI PB5
 #define MISO PB6
-#define SCK PB7
+#define SCLK PB7
 
 #define x_dir PD3
 #define SCL PC0
