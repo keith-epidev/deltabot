@@ -38,8 +38,8 @@ ISR(SPI_STC_vect){
 
 Spi* spi_init(){
 	Spi *spi = (Spi * ) malloc( sizeof( Spi ) );
-	spi->in = circular_buffer_new(64);
-	spi->out = circular_buffer_new(64);
+	spi->in = circular_buffer_new(16);
+	spi->out = circular_buffer_new(16);
 	spi->cts = 1;
 
 	pin_config_out(MOSI);

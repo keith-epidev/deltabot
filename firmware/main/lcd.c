@@ -24,23 +24,20 @@ int main(void){
 	printf("running.\n");
 	printf("Entering cmd mode\n");
 	LCD *lcd = lcd_new(SDA,SCL,0);
-
-
-	thermistor_init();
-
-	char temps[64] = {0}; 
-
-	int l = 0;
-	while(1){
 	gotoXY(lcd,0,0);
 
-	l = sprintf(temps,"temp: %0.2fC°",thermistor_get_c());
-	temps[l-1] = 0;
-	write_string(lcd,temps);
-	printf("ping\n");
-	_delay_ms(100);
+	write_string(lcd,"-= deltabot =-\n");
+	write_string(lcd,"uart      [OK]\n");
+	write_string(lcd,"spi       [OK]\n");
+	write_string(lcd,"lcd       [OK]\n");
+	thermistor_init();
+	write_string(lcd,"temp res  [OK]\n");
 
 
+	while(1){
+		write_stringf(lcd,"temp: %0.2f%cC\r",thermistor_get_c(),(unsigned)0x7f);
+		printf("ping\n");
+		_delay_ms(50);
 	}	
 
 

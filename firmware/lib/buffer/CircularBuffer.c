@@ -46,6 +46,21 @@ char circular_buffer_get(CircularBuffer *buffer){
 	return temp;
 }
 
+char circular_buffer_get_index(CircularBuffer *buffer, int i){
+	char temp = buffer->buffer[(buffer->start+i)%buffer->size];
+	return temp;
+}
+
+void circular_buffer_put_index(CircularBuffer *buffer, int i, char data){
+	buffer->buffer[(buffer->start+i)%buffer->size] = data;
+}
+
+void circular_buffer_shift(CircularBuffer *buffer, int size){
+	buffer->start = (buffer->start+size)%buffer->size;
+	buffer->end = (buffer->end+size)%buffer->size;
+}
+
+
 
 char circular_buffer_isempty(CircularBuffer *buffer){
 	return (buffer->start == buffer->end);
@@ -53,55 +68,71 @@ char circular_buffer_isempty(CircularBuffer *buffer){
 
 /*
 void circular_buffer_debug(CircularBuffer *buffer){
-for(int i = 0; i < buffer->size; i++){
-printf("| %c ",buffer->buffer[i]);
+	for(int i = 0; i < buffer->size; i++){
+		printf("| %c ",buffer->buffer[i]);
+	}
+	printf("|\n");
+
+	for(int i = 0; i < buffer->size; i++){
+		if(buffer->start == i && buffer->end == i)
+			printf("--b-");
+		else
+		if(buffer->start == i )
+			printf("--s-");
+		else
+		if( buffer->end == i)
+			printf("--e-");
+		else
+			printf("----");
+	}
+	printf("\n\n");
+
+
+		printf("-------------\n| Buffer    |\n| Start: %i  |\n| End: %i    |\n| Size: %i |\n-------------\n",buffer->start,buffer->end,buffer->size);
+
+
 }
-printf("|\n");
-
-for(int i = 0; i < buffer->size; i++){
-	if(buffer->start == i && buffer->end == i)
-		printf("  b ");
-	else
-	if(buffer->start == i )
-		printf("  s ");
-	else
-	if( buffer->end == i)
-		printf("  e ");
-	else
-		printf("    ");
-}
-printf("\n\n");
-
-
-	printf("-------------\n| Buffer    |\n| Start: %i  |\n| End: %i    |\n| Size: %i |\n-------------\n",buffer->start,buffer->end,buffer->size);
-
-
-}
-
 
 int main(void){
-printf("Creating buffer...\n");
-CircularBuffer buffer;
-buffer = circular_buffer_new(16);
-circular_buffer_debug(&buffer);
-printf("Putting char in buffer\n");
-for(int i = 0; i < 4; i++){
-circular_buffer_put(&buffer,'a');
-circular_buffer_debug(&buffer);
-circular_buffer_put(&buffer,'b');
-circular_buffer_debug(&buffer);
-circular_buffer_put(&buffer,'c');
-circular_buffer_debug(&buffer);
+	printf("Creating buffer...\n");
+	CircularBuffer *buffer;
+	buffer = circular_buffer_new(16);
+
+	for(int i = 0; i < 20; i++){
+	circular_buffer_put_index(buffer,i,i+'a');
+	printf("at %i='%c'\n",i,circular_buffer_get_index(buffer,i));
+	circular_buffer_debug(buffer);
+	}
+
+	circular_buffer_debug(buffer);
+	printf("Putting char in buffer\n");
+	for(int i = 0; i < 5; i++){
+	circular_buffer_put(buffer,'a');
+	circular_buffer_debug(buffer);
+	circular_buffer_put(buffer,'b');
+	circular_buffer_debug(buffer);
+	circular_buffer_put(buffer,'c');
+	circular_buffer_debug(buffer);
+	}
+	printf("shifting\n");
+	circular_buffer_shift(buffer,8);
+	circular_buffer_debug(buffer);
+
+	circular_buffer_put_index(buffer,8,'x');
+	printf("at 4=%c\n",circular_buffer_get_index(buffer,8));
+	circular_buffer_debug(buffer);
+
+	
+
+	printf("Getting char out of buffer:'%c'\n",circular_buffer_get(buffer));
+	circular_buffer_debug(buffer);
+
+
+	for(int i = 0; i < 14; i++){
+	printf("Getting char out of buffer:'%c'\n",circular_buffer_get(buffer));
+	printf("is buffer empty:'%s'\n",circular_buffer_isempty(buffer)?"True":"False");}
+	return 1;
 }
-printf("Getting char out of buffer:'%c'\n",circular_buffer_get(&buffer));
-circular_buffer_debug(&buffer);
 
-
-for(int i = 0; i < 14; i++){
-printf("Getting char out of buffer:'%c'\n",circular_buffer_get(&buffer));
-printf("is buffer empty:'%s'\n",circular_buffer_isempty(&buffer)?"True":"False");}
-
-return 1;
-}
 
 */

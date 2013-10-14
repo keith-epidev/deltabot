@@ -6,12 +6,14 @@
 #include "lib/delay/delay.h"
 
 typedef struct LCD{
-	Spi *spi;	//	Serial serial;
+	Spi *spi;
 	int col;
 	int row;
+	int cursor;
 	Pin *rst;
 	Pin *mode;
 	Pin *enb;
+	CircularBuffer *buffer;
 }LCD;
 
 /*

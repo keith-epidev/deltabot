@@ -35,8 +35,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(32);
-	uart->out = circular_buffer_new(128);
+	uart->in = circular_buffer_new(2);
+	uart->out = circular_buffer_new(16);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;

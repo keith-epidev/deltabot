@@ -15,6 +15,7 @@
       | LED
 
 */
+void write_buffer(LCD *lcd);
 
 
 LCD* lcd_new(Pin *mode, Pin *reset, Pin *enable){
@@ -26,6 +27,8 @@ LCD* lcd_new(Pin *mode, Pin *reset, Pin *enable){
 	lcd->enb = enable;
 	lcd->col = 14;
 	lcd->row = 6;
+	lcd->cursor = 0;
+	lcd->buffer = circular_buffer_new(128);
 
 	pin_config_out(mode);
 	pin_config_out(reset);
@@ -73,26 +76,72 @@ void write_string(LCD *lcd,char *s){
 		write_character(lcd,s[i]);
 		i++;
 	}
+	write_buffer(lcd);
 	pin_high(lcd->enb);
 }
 
 
-void write_character(LCD *lcd,char c){
-	c = c-32; //offset char map
+void write_stringf(LCD *lcd,const char* format, ...){
+	static char buffer[16] = {0};
 
-	for(int i = 0; i < 5; i++){
-		spi_put(ASCII[(int)c][i]);
-	_delay_us(100);
+	va_list args;
+	va_start (args, format);
+	vsnprintf (buffer, 15, format, args);
+
+	write_string(lcd,buffer);
+}
+
+
+void write_character(LCD *lcd, char c){
+	switch(c){
+	case '\n':
+		if(lcd->cursor > 5*14)
+			lcd->cursor = 6*14;
+		else
+			if(lcd->cursor%14 != 0) //dont force new lines on new empty ones
+				lcd->cursor += 14-lcd->cursor%14;
+		break;
+	case '\r':
+		lcd->cursor -= lcd->cursor%14;
+
+		break;
+	default:
+
+		if(lcd->cursor == 6*14){ 
+			lcd->cursor -= 14;
+			circular_buffer_shift(lcd->buffer,14);
+			for(int i = 0; i < 14; i++)
+				circular_buffer_put_index(lcd->buffer,lcd->cursor+i,' '); //clear line
+		}
+		circular_buffer_put_index(lcd->buffer,lcd->cursor++,c);
 	}
-	spi_put(0x00);
-	_delay_us(100);
+
+
 }
 
 void clear_screen(LCD *lcd){
-	for(int i = 0; i < 14*7; i++)
-	write_character(lcd,' ');
+	for(int i = 0; i < 14*6*6; i++){
+		spi_put(0x00);
+		_delay_us(100);
+	}
+
 }
 
+
+void write_buffer(LCD *lcd){
+	gotoXY(lcd,0,0);//ensure at starting point
+	for(int i = 0; i < 14*6; i++){
+		int c = (int)circular_buffer_get_index(lcd->buffer,i);
+		if(c < 32) c = ' ';
+		c-=32;
+		for(int i = 0; i < 5; i++){
+			spi_put(ASCII[c][i]);
+			_delay_us(100);
+		}
+		spi_put(0x00);
+		_delay_us(100);
+	}	
+}
 
 
 void gotoXY(LCD *lcd, char x, char y){

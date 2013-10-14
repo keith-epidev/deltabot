@@ -9,7 +9,6 @@
 #include "dev/thermistor/thermistor.h"
 
 
-static FILE mystdout = FDEV_SETUP_STREAM(uart_put_printf, NULL, _FDEV_SETUP_WRITE);
 
 void console_init();
 void console_interp();
