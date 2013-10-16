@@ -1,4 +1,4 @@
-OBJS=main/lcd.c sys/port.c lib/delay/delay.c dev/stepper/stepper.c dev/uart/uart.c lib/buffer/CircularBuffer.c sys/console.c dev/thermistor/thermistor.c dev/spi/spi.c dev/lcd/3310/3310.c
+OBJS=main/uart.c sys/port.c lib/delay/delay.c dev/stepper/stepper.c dev/uart/uart.c lib/buffer/CircularBuffer.c sys/console.c dev/thermistor/thermistor.c dev/spi/spi.c dev/lcd/3310/3310.c
 CC=avr-gcc
 #CFLAGS=  -std=gnu99  -Os -Wall -g -mmcu=at90usb1286
 CFLAGS=  -std=gnu99  -Os -Wall -g -mmcu=atmega644p -lm -Wl,-u,vfprintf -lprintf_flt  

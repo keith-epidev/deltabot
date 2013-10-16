@@ -19,6 +19,6 @@ void uart_write(char *data);
 void uart_put(char data);
 void uart_put_printf(char data, FILE *stream);
 byte uart_read();
-void uart_get();
+char uart_get();
 char uart_new_line();
 #endif

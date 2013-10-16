@@ -35,8 +35,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(2);
-	uart->out = circular_buffer_new(16);
+	uart->in = circular_buffer_new(64);
+	uart->out = circular_buffer_new(64);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;
@@ -51,8 +51,14 @@ Uart* uart_init(){
 }
 
 
-void uart_get(void){
-	target->new_line = 0;
+char uart_get(void){
+	char temp = circular_buffer_get(target->in);
+	if(temp == '\n' || temp == 0){
+		target->new_line = 0;
+		return 0;
+	}else{
+	return temp;
+	}
 }
 
 void uart_write(char *data){

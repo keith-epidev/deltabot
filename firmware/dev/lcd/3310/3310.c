@@ -82,11 +82,11 @@ void write_string(LCD *lcd,char *s){
 
 
 void write_stringf(LCD *lcd,const char* format, ...){
-	static char buffer[16] = {0};
+	static char buffer[32] = {0};
 
 	va_list args;
 	va_start (args, format);
-	vsnprintf (buffer, 15, format, args);
+	vsnprintf (buffer, 31, format, args);
 
 	write_string(lcd,buffer);
 }
