@@ -225,5 +225,5 @@ union(){
 
 
 
-//bracket_top();
+bracket_top();
 //bracket_bottom();

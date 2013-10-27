@@ -60,6 +60,15 @@ void circular_buffer_shift(CircularBuffer *buffer, int size){
 	buffer->end = (buffer->end+size)%buffer->size;
 }
 
+char circular_buffer_pop(CircularBuffer *buffer){
+	if(buffer->start == buffer->end)
+		return 0;
+
+	char temp = buffer->buffer[buffer->end-1];
+	buffer->end = (buffer->end-1)%buffer->size;
+	return temp;
+}
+
 
 
 char circular_buffer_isempty(CircularBuffer *buffer){

@@ -23,7 +23,7 @@ int main(void){
 
 	printf("running.\n");
 	printf("Entering cmd mode\n");
-	LCD *lcd = lcd_new(SDA,SCL,0);
+	LCD *lcd = lcd_new(EXP1,EXP2,0);
 	gotoXY(lcd,0,0);
 
 	write_string(lcd,"-= deltabot =-\n");

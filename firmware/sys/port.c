@@ -4,15 +4,15 @@
 
 //#ifdef __MSP430_HAS_PORT1_R__
 Port PORT[] = {
-	{(byte *)_PINA,(byte *)_PORTA,(byte *)_DDRA},
-	{(byte *)_PINB,(byte *)_PORTB,(byte *)_DDRB},
-	{(byte *)_PINC,(byte *)_PORTC,(byte *)_DDRC},
-	{(byte *)_PIND,(byte *)_PORTD,(byte *)_DDRD},
+	{(vbyte *)_PINA,(vbyte *)_PORTA,(vbyte *)_DDRA},
+	{(vbyte *)_PINB,(vbyte *)_PORTB,(vbyte *)_DDRB},
+	{(vbyte *)_PINC,(vbyte *)_PORTC,(vbyte *)_DDRC},
+	{(vbyte *)_PIND,(vbyte *)_PORTD,(vbyte *)_DDRD},
 #ifdef _PORTE
-	 {(byte *)_PINE,(byte *)_PORTE,(byte *)_DDRE},
+	 {(vbyte *)_PINE,(vbyte *)_PORTE,(vbyte *)_DDRE},
 #endif
 #ifdef _PORTF
- {(byte *)_PINF,(byte *)_PORTF,(byte *)_DDRF}
+ {(vbyte *)_PINF,(vbyte *)_PORTF,(vbyte *)_DDRF}
 #endif
 };
 
@@ -95,6 +95,10 @@ void port_low(Port *port){
 	*port->out = 0x00;
 }
 
+void port_high(Port *port){
+	*port->out = 0xFF;
+}
+
 void port_out_toggle( Port *port){
 	*port->out = *port->out ^ 0xff;
 
@@ -122,7 +126,7 @@ void port_config_alt(port obj){
 }
 
 
-byte port_get(port obj){
+vbyte port_get(port obj){
 	return *(obj.in);
 }
 
@@ -172,7 +176,8 @@ void pin_pulse(Pin *pin){
 }
 
 void pin_toggle( Pin *pin){
-		*pin->port_ptr->out ^= pin->mask;
+//		*pin->port_ptr->out ^= pin->mask;
+		*(pin->port_ptr->in) = pin->mask; //weird avr toggle method
 }
 
 

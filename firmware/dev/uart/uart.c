@@ -3,7 +3,7 @@
 #include <avr/interrupt.h>
 
 // Define baud rate
-#define USART_BAUDRATE 38400   
+#define USART_BAUDRATE 38400
 #define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
 
 
@@ -12,6 +12,13 @@ Uart *target;
 
 ISR(USART0_RX_vect){
 	value = UDR0;             //read UART register into value
+
+	if(value == 127){
+	char t = circular_buffer_pop(target->in);
+	if(t!=0)uart_write("\b \b");
+	return;
+	}
+
 	if(value == '\r')
 	value = '\0';
 
@@ -22,11 +29,16 @@ ISR(USART0_RX_vect){
 		uart_write("\r\n");
 		target->new_line = 1;
 	}
+
+
+	pin_toggle(r_led);
 }
 
 ISR(USART0_TX_vect){
 	if(!circular_buffer_isempty(target->out))
 		UDR0 = circular_buffer_get(target->out);
+
+	pin_toggle(g_led);
 
 }
 
@@ -35,8 +47,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(64);
-	uart->out = circular_buffer_new(64);
+	uart->in = circular_buffer_new(32);
+	uart->out = circular_buffer_new(128);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;

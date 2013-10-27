@@ -7,6 +7,7 @@
 #include "dev/uart/uart.h"
 #include <stdio.h>
 #include "dev/thermistor/thermistor.h"
+#include "lib/position/position.h"
 
 typedef struct Program{
 	char name[20];

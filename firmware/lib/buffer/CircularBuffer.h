@@ -18,6 +18,7 @@ char circular_buffer_isempty(CircularBuffer *buffer);
 void circular_buffer_put_index(CircularBuffer *buffer, int i, char data);
 char circular_buffer_get_index(CircularBuffer *buffer, int i);
 void circular_buffer_shift(CircularBuffer *buffer, int size);
+char circular_buffer_pop(CircularBuffer *buffer);
 
 
 #endif

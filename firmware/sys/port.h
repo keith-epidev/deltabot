@@ -7,15 +7,17 @@
 #include "etc/config.h"
 
 
+typedef volatile uint8_t vbyte;
+
 typedef struct Port{
-        byte  *in;
-        byte  *out;
-        byte  *dir;
-//        byte volatile *ifg;
-//        byte volatile *ies;
- //       byte volatile *ie;
-//        byte volatile *sel;
-  //      byte volatile *ren;
+        vbyte  *in;
+        vbyte  *out;
+        vbyte  *dir;
+//        byte *ifg;
+//        byte *ies;
+ //       byte *ie;
+//        byte *sel;
+  //      byte *ren;
 }Port;
 
 typedef struct Pin{
@@ -96,6 +98,7 @@ extern Pin PD_PIN[];
 void port_config_out(Port *port);
 void port_out_toggle(Port *port);
 void port_low(Port *port);
+void port_high(Port *port);
 void port_set(Port *port, byte var);
 //pin functions
 Pin pin_new(Port *port_ptr, byte id);

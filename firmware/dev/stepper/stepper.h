@@ -5,12 +5,14 @@
 #include <avr/interrupt.h> 
 #include <stdlib.h>
 
+
 typedef struct Stepper{
 	Pin *step;
 	Pin *direction;
 	Pin *enable;
 }Stepper;
 
+extern volatile Stepper* steppers[4];
 
 Stepper *stepper_init(Pin *step, Pin *direction, Pin *enable);
 void stepper_step(Stepper *stepper);

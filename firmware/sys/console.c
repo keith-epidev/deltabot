@@ -8,10 +8,14 @@ static FILE mystdout = FDEV_SETUP_STREAM(uart_put_printf, NULL, _FDEV_SETUP_WRIT
 
 void disp_temp();
 void echo();
+void control_heat();
+void position();
 
 Program programs[] = {
 {"temp",disp_temp},
-{"echo",echo}
+{"echo",echo},
+{"heat",control_heat},
+{"G",position}
 };
 
 void console_init(){
@@ -24,14 +28,34 @@ void console_init(){
 
 
 
-	static char buffer[64];
+	static char args[5][32];
 void console_parse(){
+
+	//clean array
+	for(int i = 0; i < ARRAY_LENGTH(args); i++)
+		for(int j = 0; j < ARRAY_LENGTH(args[0]); j++)
+			args[i][j] = 0;
+
 	int i = 0;
-	while((buffer[i++] = uart_get())!=0);
-//	printf("rec:[%s]\n",buffer);
+	int arg = 0;
+	char temp;
+
+	while(1){
+		temp = uart_get();
+		if(temp == 0){
+			break;
+		}else
+		if(temp == ' '){
+			arg++;
+			i=0;
+		}else{
+			args[arg][i] = temp;
+			i++;
+		}
+	}
 	
 	for(int i = 0; i < ARRAY_LENGTH(programs); i++){
-		if( strcmp (programs[i].name, buffer) == 0 ){
+		if( strcmp (programs[i].name, args[0]) == 0 ){
 			programs[i].function();
 			return;
 		}
@@ -64,5 +88,25 @@ void disp_temp(){
 }
 
 void echo(){
-	printf("echo\n");
+	printf("echo [%s] [%s]\n",args[0],args[1]);
+}
+
+void control_heat(){
+	if(args[1][0] == 0)
+	printf("heat requires one argument\n");
+	else if( strcmp(args[1],"on") == 0)
+	pin_high(e_heat);
+	else if( strcmp(args[1],"off") == 0)
+	pin_low(e_heat);
+	else
+	printf("error!\n");
+}
+
+void position(){
+	x = atof(args[1]);
+	y = atof(args[2]);
+	z = atof(args[3]);
+
+	calc_position();
+
 }
