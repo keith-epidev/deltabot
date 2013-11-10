@@ -23,7 +23,7 @@ int main(void){
 
 	Stepper *stepper_x = stepper_init(x_step,x_dir,motor_enb);
 	Stepper *stepper_y = stepper_init(y_step,y_dir,motor_enb);
-	Stepper *stepper_z = stepper_init(e_step,e_dir,motor_enb);
+	Stepper *stepper_z = stepper_init(z_step,z_dir,motor_enb);
 //	stepper_start_frame();
 
 	Uart *uart = uart_init();
@@ -46,7 +46,7 @@ int main(void){
 		stepper_dir(stepper_y,dir);
 		stepper_dir(stepper_z,dir);
 
-		if(dir == 1)
+		if(dir == 1){
 		if(pin_get(x_stop)==0 ){
 			if(hit < 2){
 			stepper_step(stepper_x);
@@ -64,7 +64,7 @@ int main(void){
 			} 
 		}
 		
-
+		}
 
 
 		if(dir == 0){
@@ -84,7 +84,7 @@ int main(void){
 
 
 
-			_delay_us(10);
+			_delay_us(50);
 
 /*
 			count++;

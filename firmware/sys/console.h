@@ -19,6 +19,7 @@ typedef struct Program{
 void console_init();
 void console_interp();
 void console_prompt();
+void run_steppers();
 
 #endif
 

@@ -2,9 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>  
 
+static volatile char buffers[2][64];
+int buffer_index = 0;
+
+
 CircularBuffer *circular_buffer_new(unsigned int size){
-	char *buffer;
-	buffer = (char*) malloc( sizeof(char) * (size));
+	volatile char *buffer;
+//	buffer = (char*) malloc( sizeof(char) * (size));
+
+buffer = &buffers[buffer_index++];
+
 	for(int i = 0; i < size; i++)
 		buffer[i] = 0;
 

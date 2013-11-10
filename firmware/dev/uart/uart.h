@@ -21,4 +21,6 @@ void uart_put_printf(char data, FILE *stream);
 byte uart_read();
 char uart_get();
 char uart_new_line();
+void uart_enable();
+void uart_disable();
 #endif

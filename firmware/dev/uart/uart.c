@@ -47,8 +47,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(32);
-	uart->out = circular_buffer_new(128);
+	uart->in = circular_buffer_new(64);
+	uart->out = circular_buffer_new(64);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;
@@ -60,6 +60,17 @@ Uart* uart_init(){
 	target = uart;
 
 	return uart;;
+}
+
+
+void uart_enable(){
+	UCSR0B |= ((1<<TXEN0)|(1<<RXEN0) | (1<<RXCIE0) | (1<<TXCIE0) );
+
+}
+
+void uart_disable(){
+
+	UCSR0B &= ~((1<<TXEN0)|(1<<RXEN0) | (1<<RXCIE0) | (1<<TXCIE0) );
 }
 
 

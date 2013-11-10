@@ -4,7 +4,7 @@
 //#include "etc/byte.h"
 
 typedef struct CircularBuffer{
-	char *buffer;
+	volatile char *buffer;
 	unsigned int start;
 	unsigned int end;
 	unsigned int size;
