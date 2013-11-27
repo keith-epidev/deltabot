@@ -1,4 +1,6 @@
-![intro.md]
+Software
+========
+
 ![major_functions.md]
 ![major_constraints.md]
 ![high_level_diagram.md]

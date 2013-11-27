@@ -1,6 +1,0 @@
-![intro.md]
-![printing_methods.md]
-![fdm_articulation_implementations.md]
-![fdm_accuracy_materials.md]
-![proposed_solution.md]
-![commercial_viability.md]

@@ -5,9 +5,9 @@ Primary Objectives
 - Produce cheap electronics to control the machine
 - Develop Kit like hardware / frame
 - Develop a plotter attachment
-	- Develop a plastic extruder attachment
-		- PID controlled heater element
-		- Plastic filament feeder
+- Develop a plastic extruder attachment
+	- PID controlled heater element
+	- Plastic filament feeder
 - Allow for user configurations
 	- Vertical resolution
 	- set heat control

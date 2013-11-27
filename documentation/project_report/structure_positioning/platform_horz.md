@@ -1,7 +1,7 @@
 Platform in the horizontal plane
 ================================
 
-[Top view components with platform](/img/top-view-platform_diagram.svg)
+![Top view components with platform](/img/top-view-platform_diagram.svg)
 
 Adding a platform with a radius of $r$ just offsets our $x$ and $y$ components as seen in figure [9]. The amended equations are:
 

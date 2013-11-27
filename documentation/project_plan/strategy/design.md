@@ -7,14 +7,15 @@ For a detailed overview of this projects design please refer to the [Project Rep
 
 Hardware
 --------
+![Frame Design](frame.svg){width=40mm}
+
 The frame will be constructed with aluminium beams. It have a small enclosed area for the electronics and power supply. The printer bed is mounted on top of the case. There is a beam on the top level that intersects the face in half. This is primarily for a place to mount the plastic feeder but also serves as a structural support beam. The joins will be printed on another 3D printer. Their design will facilitate modifications.
 
-![Frame Design](img/frame.svg)
 
 Electronic Systems
 ------------------
 
-![System block diagram](/img/block_diagram.svg)
+![System block diagram](block_diagram.svg)
 
 The electronics will consist of many smaller systems working in unison. This means we require multiple low-powered microcontrollers opposed to one powerful central processing unit. The system can be improved after it has been manufactured by connecting additional devices to the SPI bus.
 

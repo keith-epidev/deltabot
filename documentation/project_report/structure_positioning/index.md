@@ -1,4 +1,6 @@
-![into.md]
+Structure and motion analysis
+=============================
+
 ![structure.md]
 ![one_dimension.md]
 ![platform.md]

@@ -1,3 +1,0 @@
-Structure and motion analysis
-=============================
-

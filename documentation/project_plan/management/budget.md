@@ -19,31 +19,33 @@ Expenses
 --------
 The following resources should permit two iterations by recycling most parts.
 
-Item						| Cost	|
-------------------------------------------------|-------|
-Aluminium Extrusions, joins and frame hardware	| $100	|
-PCB Fabrication					| $50	|
-Electronic components				| $80	|
-4 Stepper motors				| $80	|
-2kg ABS Plastic					|  $80	|
-Extruder block					|  $20	|
-Power supply					|  $30	|
-------------------------------------------------|-------|
-Total						|  $450	|
-------------------------------------------------|-------|
+| Item                                             | Cost   |
+|──────────────────────────────────────────────────|────────|
+|──────────────────────────────────────────────────|────────|
+| Aluminium Extrusions, joins and frame hardware   | $100   |
+| PCB Fabrication                                  | $50    |
+| Electronic components                            | $80    |
+| 4 Stepper motors                                 | $80    |
+| 2kg ABS Plastic                                  | $80    |
+| Extruder block                                   | $20    |
+| Power supply                                     | $30    |
+|──────────────────────────────────────────────────|────────|
+| Total                                            | $450   |
+|──────────────────────────────────────────────────|────────|
 	Budget allocation
 
 Non-budgeted resources
 ----------------------
 
-Item					| Provided By 				|
---------------------------------------------------------------------------------|
-MSP430 USB programmer dongle		| Robert Ross				|
-Host computer and development software	| Keith Brown				|
-Soldering equipment			| Department of Electronics Engineering	|
-CRO and testing equipment		| Department of Electronics Engineering	|
-Printed object cleaning tools		| Keith Brown				|
-Breadboard, Pliers, cutters, Multimeter and other general electronic items| Keith Brown	|
---------------------------------------------------------------------------------|
+| Item                                                                       | Provided By                           |
+|────────────────────────────────────────────────────────────────────────────|───────────────────────────────────────|
+|────────────────────────────────────────────────────────────────────────────|───────────────────────────────────────|
+| MSP430 USB programmer dongle                                               | Robert Ross                           |
+| Host computer and development software                                     | Keith Brown                           |
+| Soldering equipment                                                        | Department of Electronics Engineering |
+| CRO and testing equipment                                                  | Department of Electronics Engineering |
+| Printed object cleaning tools                                              | Keith Brown                           |
+| Breadboard, Pliers, cutters, Multimeter and other general electronic items | Keith Brown                           |
+|────────────────────────────────────────────────────────────────────────────|───────────────────────────────────────|
 	Non-budgeted resources
 

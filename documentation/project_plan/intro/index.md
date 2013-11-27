@@ -10,3 +10,9 @@ The environment will benefit from this new way of producing products. Firstly, p
 Whilst companies like Objet and Stratasys produce printers for the commercial sector, it is hobbyist style printers that have spread awareness of such technology. The Reprap foundation has produced numerous models under the GPL licence. Their main goal is to produce an affordable device that can self replicate. All of the designs are available to download and print. Makerbot Industries is a comercial operation that was born from an open source community.
 
 Online services such as Shapeways provides 3D printing services. This allows their customers to receive a higher quality print without investing in expensive hardware. CAD design community sites have also been very popular such as 'thingiverse.com'. There are over 30,000 free designs including a key-chain fob, mobile phone case, model radial engine and even 3D printer parts and upgrades.
+
+![printing_methods.md]
+![fdm_articulation_implementations.md]
+![fdm_accuracy_materials.md]
+![proposed_solution.md]
+![commercial_viability.md]

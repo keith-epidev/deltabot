@@ -1,4 +1,6 @@
-![intro.md]
+Electronic Systems
+==================
+
 ![methodology.md]
 ![microcontroller.md]
 ![motor_drivers.md]

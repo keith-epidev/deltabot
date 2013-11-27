@@ -11,7 +11,7 @@ To allow for a platform, we must subtract its radius from each of the linkages l
 $$h = {\sqrt{3}\over 2}D - r $$
 
 Universal Joint Angle Range
-===========================
+---------------------------
 
 
 [Universal joint angle horizontal range](/img/top-view-angle_diagram.svg)
