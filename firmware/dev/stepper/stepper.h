@@ -2,8 +2,10 @@
 #define STEPPER_H
 
 #include "sys/port.h"
+#include "lib/position/position.h"
 #include <avr/interrupt.h> 
 #include <stdlib.h>
+#include "sys/console.h"
 
 
 typedef struct Stepper{
@@ -13,6 +15,7 @@ typedef struct Stepper{
 }Stepper;
 
 extern volatile Stepper* steppers[4];
+extern volatile char stepper_active;
 
 Stepper *stepper_init(Pin *step, Pin *direction, Pin *enable);
 void steppers_enable();

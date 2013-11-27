@@ -27,11 +27,11 @@ ISR(USART0_RX_vect){
 	
 	if(value == '\0'){
 		uart_write("\r\n");
-		target->new_line = 1;
+		target->new_line++;
 	}
 
 
-	pin_toggle(r_led);
+//	pin_toggle(r_led);
 }
 
 ISR(USART0_TX_vect){
@@ -47,8 +47,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(64);
-	uart->out = circular_buffer_new(64);
+	uart->in = circular_buffer_new(256);
+	uart->out = circular_buffer_new(256);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;
@@ -77,7 +77,7 @@ void uart_disable(){
 char uart_get(void){
 	char temp = circular_buffer_get(target->in);
 	if(temp == '\n' || temp == 0){
-		target->new_line = 0;
+		target->new_line--;
 		return 0;
 	}else{
 	return temp;

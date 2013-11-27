@@ -1,10 +1,10 @@
 #include "stepper.h"
-#include "../../lib/position/position.h"
 
 volatile Stepper* steppers[4];
 volatile int speed = 40;
 volatile unsigned int steps = 0;
 volatile int s = 0;
+volatile char stepper_active = 0;
 
 Stepper *stepper_init(Pin *step, Pin *direction, Pin *enable){
 	Stepper *stepper = (Stepper * ) malloc( sizeof( Stepper ) );
@@ -29,16 +29,12 @@ Stepper *stepper_init(Pin *step, Pin *direction, Pin *enable){
 
 void stepper_start_frame(){
 	cli();
-TCCR1A = 0;     // set entire TCCR1A register to 0
-    TCCR1B = 0;     // same for TCCR1B
+	TCCR1A = 0;     // set entire TCCR1A register to 0
+	TCCR1B = 0;     // same for TCCR1B
 
-
-
-
-
-OCR1A = 1;
+	OCR1A = 1;
     // turn on CTC mode:
-    TCCR1B |= (1 << WGM12);
+	TCCR1B |= (1 << WGM12);
     // Set CS10 and CS12 bits for 1024 prescaler:
  //   TCCR1B |= (1 << CS00);
    // TCCR1B |= (1 << CS12);
@@ -76,21 +72,29 @@ void set_speed( int s){
 }
 
 void steppers_enable(){
+	cli();
 	pin_low(steppers[0]->enable);
 	pin_high(r_led);
-	TCCR1B |= ((1 << CS00)); // Start timer at Fcpu/64 
-//	TCCR1B |= ((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
+	//TCCR1B |= ((1 << CS00)); // Start timer at Fcpu/64 
+	TCCR1B |= ((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
 	TIMSK1 |= (1 << OCIE1A); // Enable CTC interrupt 
-OCR1A = 1;
+	OCR1A = speed;
+	stepper_active = 1;
+	sei(); //  Enable global interrupts 
+	printf("enb\n");
 }
 
 void steppers_disable(){
+	cli();
 	pin_high(steppers[0]->enable);
 	pin_low(r_led);
-	TCCR1B &= ~((1 << CS00)); // Start timer at Fcpu/64 
-//	TCCR1B &= ~((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
+	//TCCR1B &= ~((1 << CS00)); // Start timer at Fcpu/64 
+	TCCR1B &= ~((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
 	TIMSK1 &= ~(1 << OCIE1A); // Enable CTC interrupt 
-OCR1A = 1;
+	OCR1A = speed;
+	stepper_active = 0;
+	sei(); //  Enable global interrupts 
+	printf("dis\n");
 }
 
 
@@ -98,42 +102,27 @@ OCR1A = 1;
 int i = 0;
 
 ISR(TIMER1_COMPA_vect) { 
-if(distance > 0 || hold_on == 1){
+	if( motion_current->distance > 0 || hold_on == 1 ){
 
-	a1_cycle++;
-	a2_cycle++;
-	a3_cycle++;
+		if( (int)(a1_cycle + motion_current->motor[0].step) != (int)(a1_cycle)   ){
+			pin_toggle(steppers[0]->step);
+		}
 
+		if( (int)(a2_cycle + motion_current->motor[1].step) != (int)(a2_cycle)   ){
+			pin_toggle(steppers[1]->step);
+		}
 
-	if(a1_cycle >= a1_step && a1_step != -1){
-		pin_toggle(steppers[0]->step);
-		a1_cycle = 0;
-	}
-	if(a2_cycle >= a2_step && a2_step != -1){
-		pin_toggle(steppers[1]->step);
-		a2_cycle = 0;
-	}
-	if(a3_cycle >= a3_step && a3_step != -1){
-		pin_toggle(steppers[2]->step);
-		a3_cycle = 0;
-	}
+		if( (int)(a3_cycle + motion_current->motor[2].step) != (int)(a3_cycle)   ){
+			pin_toggle(steppers[2]->step);
+		}
 
+			a1_cycle += motion_current->motor[0].step;
+			a2_cycle += motion_current->motor[1].step;
+			a3_cycle += motion_current->motor[2].step;
 
-/*
-	for(i = 0; i < s; i++)
-	pin_toggle(steppers[i]->step);
+			motion_current->distance--;
 
-	if(steps == 10000){
-			steps = 0;
-		.	for(i = 0; i < s; i++)
-			pin_toggle(steppers[i]->direction);
-	}
-*/
-
-displacement++;
-
-distance--;
-}else
-steppers_disable();
+	}else
+	shift_motion();
 
 }

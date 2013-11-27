@@ -1,10 +1,11 @@
 #include "etc/byte.h"
 #include "etc/config.h"
 #include "dev/stepper/stepper.h"
+#include "lib/position/position.h"
 #include "sys/port.h"
 #include "sys/console.h"
 #include "dev/uart/uart.h"
-#include "dev/thermistor/thermistor.h"
+//#include "dev/thermistor/thermistor.h"
 
 #include <util/delay.h>
 #include <avr/interrupt.h> 
@@ -32,11 +33,11 @@ int main(void){
 	stepper_start_frame();
 	steppers_disable();
 
+
 	Uart *uart = uart_init();
 	console_init();
-	thermistor_init();
+//	thermistor_init();
 	console_prompt();
-
 }
 
 

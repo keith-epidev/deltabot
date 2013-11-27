@@ -2,6 +2,29 @@
 #define POSITION_H
 
 #include "sys/port.h"
+#include "dev/stepper/stepper.h"
+#include "sys/console.h"
+#include <math.h>
+
+#define QUEUE_SIZE 4
+
+
+typedef struct Motion_actuator{
+	char dir;
+	double step;
+}Motion_actuator;
+
+
+typedef struct Motion{
+	long double distance;
+	Motion_actuator motor[3];
+}Motion;
+
+
+extern volatile Motion motion_queue[QUEUE_SIZE];
+extern volatile Motion* motion_current;
+
+/*
 
 extern volatile  double x;
 extern volatile  double y;
@@ -11,12 +34,8 @@ extern volatile  double a1;
 extern volatile  double a2;
 extern volatile  double a3;
 
-extern volatile  double a1_step;
-extern volatile  double a2_step;
-extern volatile  double a3_step; 
 
-extern volatile  double distance;
-extern volatile  double displacement;
+*/
 
 extern volatile  double a1_cycle;
 extern volatile  double a2_cycle;
@@ -26,5 +45,9 @@ extern volatile int hold_on;
 
 
 void calc_position();
+void do_motion();
+void shift_motion();
+void queue_motion(long double distance, double a1, double a2, double a3);
+char motion_is_full();
 
-#endif
+#endif 
