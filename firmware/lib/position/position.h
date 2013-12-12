@@ -17,6 +17,7 @@ typedef struct Motion_actuator{
 
 typedef struct Motion{
 	long double distance;
+	long double distance_change;
 	Motion_actuator motor[3];
 }Motion;
 
@@ -47,7 +48,7 @@ extern volatile int hold_on;
 void calc_position();
 void do_motion();
 void shift_motion();
-void queue_motion(long double distance, double a1, double a2, double a3);
+void queue_motion(long double distance, long double distance_change, double a1, double a2, double a3);
 char motion_is_full();
 
 #endif 

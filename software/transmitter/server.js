@@ -41,7 +41,6 @@ var cmds = parse_file(data);
 
 console.log(cmds);
 //uart port
-if(false){
 var uart = "/dev/ttyUSB0";
 var baud = 38400;
 console.log("Setting UART baud rate of "+baud);
@@ -51,7 +50,6 @@ var output = fs.createWriteStream(uart);
 console.log("OUT [OK]")
 var input = fs.ReadStream(uart);
 console.log("IN  [OK]")
-}
 
 
 console.log("Starting...");
@@ -60,7 +58,7 @@ console.log("------------");
 var index = 0;
 var checksum_fails = 0;
 var messages_sent = 0;
-var time_stated = Date.now();
+var time_started = Date.now();
 
 
 input.on('data',function(d){
@@ -82,9 +80,11 @@ input.on('data',function(d){
 
 			var cmd = cmds[index];
 			console.log("[~] "+cmd);
-			out.write(cmd+"\r");
+			output.write(cmd+"\r");
 			messages_sent++;
 			index++;
+
+
 		}
 });
 

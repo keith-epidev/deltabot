@@ -3,6 +3,7 @@ include <../lib/nema.scad>;
 include <../lib/LM8UU.scad>;
 include <linear_actuator/carriage.scad>;
 include <linear_actuator/strut.scad>;
+$fn = 10;
 
 height = 330;
 width = height/2;

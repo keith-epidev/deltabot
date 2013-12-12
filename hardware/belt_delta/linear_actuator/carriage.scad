@@ -1,7 +1,9 @@
 include <../../lib/LM8UU.scad>;
 include <bracket.scad>;
 include <../../hardware/extruder.scad>
-$fn = 30;
+$fn = 40;
+
+carriage_clamp();
 
 module carriage_clamp(){
 color("white"){
@@ -27,6 +29,22 @@ color("white"){
 
 difference(){
 union(){
+
+
+difference(){
+translate([0,10,8]) rotate([0,270,0])fillet(9,32);
+for(j = [-10,3])
+	translate([j,10,0])
+		cube([7,10,20]);
+
+for(j = [-22,15])
+	translate([j,17,0])
+		cube([7,10,20]);
+
+
+}
+
+
 difference(){
 for(i = [0,1])
 mirror([i,0,0]){
@@ -34,6 +52,8 @@ difference(){
 translate([0,-10,0]) cube([41,20,24]);
 translate([27,0,-1]) cylinder(r=15/2,h=26);
 translate([27,-4,-1]) cube([20,8,26]);
+
+
 
 translate([41,0,0]) rotate([270,180,0])fillet(5,25);
 translate([41,0,24]) rotate([90,180,0])fillet(5,25);
@@ -62,8 +82,8 @@ for(i = [0,1])
 translate([0,0,j])
 mirror([i,0,0]){
 translate([-37,20,4]) rotate([90,0,0]) cylinder(r=1.6,h=40);
-translate([-37,14,4]) rotate([90,0,0]) cylinder(r=3,h=6);
-translate([-37,-8,4]) rotate([90,0,0]) cylinder(r=3,h=5);
+translate([-37,13,4]) rotate([90,0,0]) cylinder(r=4,h=6);
+translate([-37,-7,4]) rotate([90,0,0]) cylinder(r=4,h=6);
 }
 
 for(i = [0,1])
@@ -74,7 +94,7 @@ cylinder(r=3.5,h=4);
 }
 }
 //end stop pole
-translate([0,13,-1]){ rotate([0,0,0]) cylinder(r=1.5,h=10);
+translate([0,13,-1]){ rotate([0,0,0]) cylinder(r=1.5,h=16);
 
 }
 
@@ -84,5 +104,5 @@ translate([0,13,-1]){ rotate([0,0,0]) cylinder(r=1.5,h=10);
 
 
 carriage();
-
+//platform();
 //translate([-12,-6,8]) carriage_clamp();

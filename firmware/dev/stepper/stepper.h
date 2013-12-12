@@ -24,5 +24,6 @@ void stepper_step(Stepper *stepper);
 void stepper_dir(Stepper *stepper,int dir);
 void stepper_start_frame();
 void set_speed(int s);
+int get_speed();
 
 #endif

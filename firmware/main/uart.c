@@ -27,14 +27,14 @@ int main(void){
 	pin_high(e_heat);
 	pin_high(b_heat);
 
-	Stepper *stepper_x = stepper_init(x_step,x_dir,motor_enb);
-	Stepper *stepper_y = stepper_init(y_step,y_dir,motor_enb);
-	Stepper *stepper_z = stepper_init(z_step,z_dir,motor_enb);
+	stepper_init(x_step,x_dir,motor_enb);
+	stepper_init(y_step,y_dir,motor_enb);
+	stepper_init(z_step,z_dir,motor_enb);
 	stepper_start_frame();
 	steppers_disable();
 
 
-	Uart *uart = uart_init();
+	uart_init();
 	console_init();
 //	thermistor_init();
 	console_prompt();

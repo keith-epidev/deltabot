@@ -12,4 +12,4 @@ Now that we understand the physical constraints we can start to design the physi
 ![platform.md]
 ![linkages.md]
 ![linear_actuators.md]
-![tool_end.md]
+![tool_end]

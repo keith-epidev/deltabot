@@ -1,5 +1,5 @@
 #include "console.h"
-#include "math.h"
+#include <math.h>
 #include <string.h>
 #include "lib/utils/array_length.h"
 #include "lib/position/position.h"
@@ -44,40 +44,45 @@ void console_init(){
 }
 
 
-
-	static char args[5][16];
+	static char args_buffer[128];
+	static char *args[7];
+	int args_buffer_length = 0;
 void console_parse(){
 
 	//clean array
-	for(int i = 0; i < ARRAY_LENGTH(args); i++)
-		for(int j = 0; j < ARRAY_LENGTH(args[0]); j++)
-			args[i][j] = 0;
+	for(int i = 0; i < ARRAY_LENGTH(args_buffer); i++)
+			args_buffer[i] = 0;
 
 	int i = 0;
 	int arg = 0;
+	args[arg] = args_buffer;//first at start of string
 	char temp;
 
 	while(1){
 		temp = uart_get();
 		if(temp == 0){
+			args_buffer_length = i;
+			args_buffer[i] = '\0';//terminate string
 			break;
 		}else
 		if(temp == ' '){
 			arg++;
-			i=0;
+			args[arg] = &args_buffer[i+1];
+			args_buffer[i] = '\0';//terminate string
+			
 		}else{
-			args[arg][i] = temp;
-			i++;
+			args_buffer[i] = temp;
 		}
+			i++;
 	}
-	
+
 	for(int i = 0; i < ARRAY_LENGTH(programs); i++){
 		if( strcmp (programs[i].name, args[0]) == 0 ){
 			programs[i].function();
 			return;
 		}
 	}
-	
+		
 	printf("Command not found!\n");
 }
 
@@ -88,19 +93,16 @@ void console_prompt(){
 
 void console_interp(){
 
-	uart_write(">");
+	printf(">");
 	while(!uart_new_line());
 	console_parse();
 
-//	uart_write("Got stuff\r\n");
-
-
-	//uart_get();
 }
 
 
 void disp_temp(){
-//	printf("temp=%0.2f\n",thermistor_get_c());
+	//Removed for now
+	//	printf("temp=%0.2f\n",thermistor_get_c());
 }
 
 void echo(){
@@ -119,6 +121,7 @@ void control_heat(){
 }
 
 void position(){
+	//TODO
 //	x = atof(args[1]);
 //	y = atof(args[2]);
 //	z = atof(args[3]);
@@ -135,17 +138,39 @@ printf("sense_rx=%i",pin_get(sense_rx));
 }
 
 void aprox(){
+	int checksum = atoi(args[6]);
+	//validate string first
+	int i = 0;
+	int my_sum = 0;
+	while(1){
+		if(&args_buffer[i] == (args[6]-1))
+			break;
+		if(args_buffer[i] == 0)
+		my_sum += ' ';//re-substitute space 
+		else
+		my_sum += args_buffer[i];
+
+		i++;
+	}
+
+	if(my_sum != checksum){ //checksum failed, ask for repeat
+		printf("@");
+		return;
+	}
+
+
 	long double distance = atof(args[1]);
+	long double distance_change = atof(args[5]);
 	double a1 = atof(args[2]);
 	double a2 = atof(args[3]);
 	double a3 = atof(args[4]);
 
 	while(motion_is_full()){
-		printf("x");
+//		printf("x");
 	}
 
-	printf("%lf %f %f %f",distance,a1,a2,a3);
-	queue_motion(distance, a1, a2, a3);
+//	printf("%Lf %f %f %f",distance,a1,a2,a3);
+	queue_motion(distance, distance_change, a1, a2, a3);
 
 }
 
@@ -178,7 +203,9 @@ void sound(){
 
 void rise(){
 
+	set_speed(20);
 	motion_current->distance = 0;
+	motion_current->distance_change = INFINITY;
 	motion_current->motor[0].dir = 0;
 	motion_current->motor[1].dir = 0;
 	motion_current->motor[2].dir = 0;
@@ -214,7 +241,9 @@ void rise(){
 }
 
 void drop(){
+	set_speed(20);
 	motion_current->distance = 0;
+	motion_current->distance_change = INFINITY;
 	motion_current->motor[0].dir = 1;
 	motion_current->motor[1].dir = 1;
 	motion_current->motor[2].dir = 1;
@@ -229,6 +258,8 @@ void drop(){
 	hold_on = 1;
 	steppers_enable();
 	while(1){
+
+
 
 	if(pin_get(sense_rx) == 1)
 		break;

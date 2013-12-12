@@ -67,13 +67,13 @@ module top_tube_fix(){
 color("white"){
 difference(){
 union(){
-translate([0,0,6])
-cylinder(r=8,h=6,center=true);
+translate([0,0,10])
+cylinder(r=8,h=10,center=true);
 
 difference(){
 	union(){
 	//base
-	cylinder(r=12,h=5);
+	cylinder(r=12,h=10);
 
 	for(j = [0:2])
 	rotate([0,0,j*360/3]) translate([-5 ,7,0]) 
@@ -91,15 +91,62 @@ difference(){
 for(j = [0:2])
 rotate([0,0,j*360/3])
 translate([0 ,13,0])
-cylinder(r=1.5,h=11,center=true);
+cylinder(r=1.7,h=11,center=true);
+
+//bores for stand off
+for(j = [0:2])
+rotate([0,0,j*360/3])
+translate([0 ,13,10.5])
+cylinder(r=3.5,h=11,center=true);
+
 }
 
 }
-cylinder(r=3.2,h=21,center=true);
+cylinder(r=3.2,h=39,center=true);
 translate([0,0,-4])
-cylinder(r=5,h=10);
+cylinder(r=5,h=8);
 }
 }}
+
+
+module top_end_clamper(){
+height = 17;
+
+color("white"){
+difference(){
+	union(){
+	//base
+	cylinder(r=12,h=height);
+
+	for(j = [0:2])
+	rotate([0,0,j*360/3]) translate([-5 ,7,0]) 
+	union(){
+	cube([10,5,height]);
+	translate([5,5,0])
+	cylinder(r=5,h=height);
+	}
+	}
+	
+
+	cylinder(r=4,h=height*2-4,center=true);
+
+//stand off holes
+for(j = [0:2])
+rotate([0,0,j*360/3])
+translate([0 ,13,0])
+cylinder(r=1.7,h=height*3,center=true);
+
+//clamp holes
+for(j = [0:2])
+for(k = [4,13])
+translate([0,0,k])
+rotate([30+60+j*360/3,90,0]) cylinder(r=1.7,h=20);
+
+}
+
+
+}
+}
 
 
 module top_end(){
@@ -182,6 +229,8 @@ difference(){
 
 }
 
+
+
 module platform(){
 color("white"){
 difference(){
@@ -215,28 +264,37 @@ module traxxis_mount(){
 color("white"){
 difference(){
 union(){
-translate([-3,5,0]) cube([6,13,6]);
+translate([-3,5,0]) cube([6,15,8]);
 
 for(i = [-1,1]){
-translate([i*(7+6),0,0]) translate([-3,0,0]) cube([6,18,6]);
+translate([i*(7+6),0,0]) translate([-3,0,0]) cube([6,20,8]);
 }
 }
 
 
-translate([-20,15,3])
+translate([-20,15,4])
 rotate([0,90,0]){
-cylinder(r=2,h=40);
+cylinder(r=1.75,h=40);
 //bores
-//translate([0,0,3]) cylinder(r=3,h=2);
-//translate([0,0,35]) cylinder(r=3,h=2);
+translate([0,0,2]) cylinder(r=3.5,h=3);
+translate([0,0,35]) cylinder(r=3.5,h=3);
 
 
 
 
 }
-translate([10,12,0]) fillet_face(2,4,6,12);
-translate([-16,12,0]) fillet_face(2,4,6,12);
-translate([-3,12,0]) fillet_face(2,4,6,12);
+
+
+translate([0,20,8]) 
+rotate([180,90,0])
+fillet(3,40);
+
+translate([0,20,0]) 
+rotate([90,0,270])
+fillet(3,40);
+//translate([10,12,0]) fillet_face(2,4,6,12);
+//translate([-16,12,0]) fillet_face(2,4,6,12);
+//translate([-3,12,0]) fillet_face(2,4,6,12);
 }
 
 
@@ -262,7 +320,6 @@ translate([3.5,0,0])
 	}
 }
 }
-
 
 
 module platform_assembled(){
@@ -308,4 +365,3 @@ translate([0,0,-2])
 extruder();
 platform_assembled();
 */
-

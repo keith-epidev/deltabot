@@ -1,3 +1,6 @@
+
+$fn = 1000;
+
 // Parametric Pulley with multiple belt profiles
 // by droftarts January 2012
 
@@ -123,7 +126,7 @@ module pulley( belt_type , pulley_OD , tooth_depth , tooth_width )
 			//base
 	
 			if ( pulley_b_ht < 2 ) { echo ("CAN'T DRAW PULLEY BASE, HEIGHT LESS THAN 2!!!"); } else {
-				rotate_extrude($fn=pulley_b_dia*2)
+				rotate_extrude($fn=pulley_b_dia*8)
 				{
 						square([pulley_b_dia/2-1,pulley_b_ht]);
 						square([pulley_b_dia/2,pulley_b_ht-1]);
@@ -137,7 +140,7 @@ module pulley( belt_type , pulley_OD , tooth_depth , tooth_width )
 			
 			translate([0,0,pulley_b_ht]) 
 			rotate ([0,0,360/(teeth*4)]) 
-			cylinder(r=pulley_OD/2,h=pulley_t_ht, $fn=teeth*4);
+			cylinder(r=pulley_OD/2,h=pulley_t_ht, $fn=teeth*40);
 	
 			//teeth - cut out of shaft
 		
@@ -166,17 +169,17 @@ module pulley( belt_type , pulley_OD , tooth_depth , tooth_width )
 			
 		//belt retainer / idler
 		if ( retainer > 0 ) {translate ([0,0, pulley_b_ht + pulley_t_ht ]) 
-		rotate_extrude($fn=teeth*4)  
+		rotate_extrude($fn=teeth*40)  
 		polygon([[0,0],[pulley_OD/2,0],[pulley_OD/2 + retainer_ht , retainer_ht],[0 , retainer_ht],[0,0]]);}
 		
 		if ( idler > 0 ) {translate ([0,0, pulley_b_ht - idler_ht ]) 
-		rotate_extrude($fn=teeth*4)  
+		rotate_extrude($fn=teeth*40)  
 		polygon([[0,0],[pulley_OD/2 + idler_ht,0],[pulley_OD/2 , idler_ht],[0 , idler_ht],[0,0]]);}
 	
 		}
 	   
 		//hole for motor shaft
-		translate([0,0,-1])cylinder(r=motor_shaft/2,h=pulley_b_ht + pulley_t_ht + retainer_ht + 2,$fn=motor_shaft*4);
+		translate([0,0,-1])cylinder(r=motor_shaft/2,h=pulley_b_ht + pulley_t_ht + retainer_ht + 2,$fn=motor_shaft*40);
 				
 		//captive nut and grub screw holes
 	
@@ -195,14 +198,14 @@ module pulley( belt_type , pulley_OD , tooth_depth , tooth_width )
 				if ( m3_nut_hex > 0 )
 					{
 						// hex nut
-						translate([0,0.25,motor_shaft/2+m3_nut_depth/2+nut_shaft_distance]) rotate([0,0,30]) cylinder(r=m3_nut_points/2,h=m3_nut_depth,center=true,$fn=6);
+						translate([0,0.25,motor_shaft/2+m3_nut_depth/2+nut_shaft_distance]) rotate([0,0,30]) cylinder(r=m3_nut_points/2,h=m3_nut_depth,center=true,$fn=60);
 					} else {
 						// square nut
 						translate([0,0.25,motor_shaft/2+m3_nut_depth/2+nut_shaft_distance]) cube([m3_nut_flats,m3_nut_flats,m3_nut_depth],center=true);
 					}
 	
 				//grub screw hole
-				rotate([0,0,22.5])cylinder(r=m3_dia/2,h=pulley_b_dia/2+1,$fn=8);
+				rotate([0,0,22.5])cylinder(r=m3_dia/2,h=pulley_b_dia/2+1,$fn=80);
 			}
 		}}
 	 }

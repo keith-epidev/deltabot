@@ -1,7 +1,8 @@
 var cmds = [];
 var axies = {X:0,Y:0,Z:0,E:0,F:0};
 
-var scale = .1;
+var scale = 1;
+var offset = -50;
 
 parse_file = function(data){
 
@@ -109,14 +110,18 @@ parse_line = function(line){
 		for(var i = 1; i < cmd.length; i ++){
 			var axis  = cmd[i].substr(0,1);
 			var number = cmd[i].substr(1,cmd[i].length);
+			if(axis == 'X' || axis == 'Y')
+			number = parseFloat(number)*scale + offset;
+			else
 			number = parseFloat(number)*scale;
+
 			axies[axis] = number;
 		}
 
 		var last_heights = calc_heights([last.X,last.Y,last.Z]);
 		var new_heights = calc_heights([axies.X,axies.Y,axies.Z]);
-	//	console.log(last_heights);
-	//	console.log(new_heights);
+	console.log(last_heights);
+	console.log(new_heights);
 		var speeds = calc_speeds(new_heights,last_heights);
 
 		cmds.push(speeds);

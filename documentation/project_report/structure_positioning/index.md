@@ -1,4 +1,4 @@
-Structure and motion analysis
+Structure and positioning analysis
 =============================
 
 ![structure.md]

@@ -34,7 +34,7 @@ retainer_ht = 2.5;	// height of retainer flange over pulley, standard = 1.5
 idler = 1;			// Belt retainer below teeth, 0 = No, 1 = Yes
 idler_ht = 2.5;		// height of idler flange over pulley, standard = 1.5
 
-pulley_t_ht = 12.5 - retainer_ht - idler_ht;	// length of toothed part of pulley, standard = 12
+pulley_t_ht = 10.5 - retainer_ht - idler_ht;	// length of toothed part of pulley, standard = 12
 pulley_b_ht = 2.5;//8;		// pulley base height, standard = 8. Set to same as idler_ht if you want an idler but no pulley.
 pulley_b_dia = 2.5; //20;	// pulley base diameter, standard = 20
 no_of_nuts = 1;		// number of captive nuts required, standard = 1

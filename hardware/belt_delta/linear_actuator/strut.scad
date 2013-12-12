@@ -72,5 +72,5 @@ color("white"){
 
 
 
-mirror([0,1,0])
+//mirror([0,1,0])
 strut();

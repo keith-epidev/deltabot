@@ -1,10 +1,18 @@
 #include "stepper.h"
 
 volatile Stepper* steppers[4];
-volatile int speed = 40;
+volatile int speed = 20;
+volatile int speed_min = 20;//I want to be able to notice it slow down for tests
+volatile int speed_max = 1;
+volatile int speed_accel = 1;
+
 volatile unsigned int steps = 0;
 volatile int s = 0;
 volatile char stepper_active = 0;
+
+
+//prototypes
+void accel(long double change);
 
 Stepper *stepper_init(Pin *step, Pin *direction, Pin *enable){
 	Stepper *stepper = (Stepper * ) malloc( sizeof( Stepper ) );
@@ -32,7 +40,7 @@ void stepper_start_frame(){
 	TCCR1A = 0;     // set entire TCCR1A register to 0
 	TCCR1B = 0;     // same for TCCR1B
 
-	OCR1A = 1;
+	OCR1A = speed;
     // turn on CTC mode:
 	TCCR1B |= (1 << WGM12);
     // Set CS10 and CS12 bits for 1024 prescaler:
@@ -68,33 +76,50 @@ void stepper_dir(Stepper *stepper,int dir){
 
 void set_speed( int s){
 	speed = s;
-	OCR1A   = speed; // Set CTC compare value to 1Hz at 1MHz AVR clock, with a prescaler of 64 
+	OCR1A = speed; // Set CTC compare value to 1Hz at 1MHz AVR clock, with a prescaler of 64 
 }
+
+
+int get_speed(){
+	return speed;
+}
+
+void accel(long double change){
+	if(change < 200	){
+		if(speed < speed_min)
+			speed += speed_accel;
+	}else{ 
+		if(speed > speed_max)
+			speed -= speed_accel;
+	}
+
+	OCR1A = speed; 
+}
+
 
 void steppers_enable(){
 	cli();
 	pin_low(steppers[0]->enable);
 	pin_high(r_led);
-	//TCCR1B |= ((1 << CS00)); // Start timer at Fcpu/64 
+//	TCCR1B |= ((1 << CS10)); // Start timer at Fcpu/64 
 	TCCR1B |= ((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
 	TIMSK1 |= (1 << OCIE1A); // Enable CTC interrupt 
-	OCR1A = speed;
 	stepper_active = 1;
 	sei(); //  Enable global interrupts 
-	printf("enb\n");
+//	printf("enb\n");
 }
 
 void steppers_disable(){
 	cli();
 	pin_high(steppers[0]->enable);
 	pin_low(r_led);
-	//TCCR1B &= ~((1 << CS00)); // Start timer at Fcpu/64 
+//	TCCR1B &= ~( (1 << CS10)); // Start timer at Fcpu/64 
 	TCCR1B &= ~((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
 	TIMSK1 &= ~(1 << OCIE1A); // Enable CTC interrupt 
-	OCR1A = speed;
+	set_speed(40);
 	stepper_active = 0;
 	sei(); //  Enable global interrupts 
-	printf("dis\n");
+//	printf("dis\n");
 }
 
 
@@ -121,6 +146,10 @@ ISR(TIMER1_COMPA_vect) {
 			a3_cycle += motion_current->motor[2].step;
 
 			motion_current->distance--;
+			motion_current->distance_change--;
+
+			accel(motion_current->distance_change);
+
 
 	}else
 	shift_motion();

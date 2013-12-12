@@ -42,17 +42,20 @@ double dist(double a, double b){
 
 
 void calc_position(double x, double y, double z){
-double h1,h2,h3;
-//calc heights
-h1 = z + sqrt( r2 - pow( dist(x, (y+pr) - D),2) );
-h2 = z + sqrt( r2 - pow( dist((x-0.5*pr) + D*root3_2, y - pr*root3_2),2));
-h3 = z + sqrt( r2 - pow( dist((x+0.5*pr) - D*root3_2, y - pr*root3_2),2));
+	//TODO
+/*
+	double h1,h2,h3;
+	//calc heights
+	h1 = z + sqrt( r2 - pow( dist(x, (y+pr) - D),2) );
+	h2 = z + sqrt( r2 - pow( dist((x-0.5*pr) + D*root3_2, y - pr*root3_2),2));
+	h3 = z + sqrt( r2 - pow( dist((x+0.5*pr) - D*root3_2, y - pr*root3_2),2));
 
-
+*/
 }
 
 
 void calc_speed(){
+	//TODO
 }
 
 
@@ -61,20 +64,21 @@ char motion_is_full(){
 }
 
 
-void queue_motion(long double distance, double a1, double a2, double a3){
+void queue_motion(long double distance, long double distance_change, double a1, double a2, double a3){
 	int end = (start+size)%QUEUE_SIZE;
 
 
-	printf("queue");
+	//printf("queue");
 
-	printf("start:%i\n",start);
-	printf("end:%i\n",end);
-	printf("size:%i\n",size);
-	printf("a:%i\n",stepper_active);
+	//printf("start:%i\n",start);
+	//printf("end:%i\n",end);
+	//printf("size:%i\n",size);
+	//printf("a:%i\n",stepper_active);
 
 
 	size++;	
 	motion_queue[end].distance = distance;
+	motion_queue[end].distance_change = distance_change;
 
 	motion_queue[end].motor[0].dir = a1 > 0 ? 0 : 1;
 	motion_queue[end].motor[1].dir = a2 > 0 ? 0 : 1;
@@ -92,7 +96,7 @@ void queue_motion(long double distance, double a1, double a2, double a3){
 }
 
 void do_motion(){
-	printf("do\n");
+	//printf("do\n");
 
 	motion_current = &motion_queue[start];
 	pin_set(steppers[0]->direction,motion_queue[start].motor[0].dir);
@@ -106,12 +110,12 @@ void do_motion(){
 
 
 void shift_motion(){
-	printf("shift\n");
+	//printf("shift\n");
 
 	start = (start+1)%QUEUE_SIZE;
 	size--;
 
-	printf("srt%i sze:%i\n",start,size);
+	//printf("srt%i sze:%i\n",start,size);
 	if(size > 0)
 		do_motion();
 	else

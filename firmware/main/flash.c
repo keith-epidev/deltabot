@@ -21,24 +21,13 @@ int main(void){
 
 	while(1){
 
-	pin_set(g_led,pin_get(x_stop));
-	
+	pin_toggle(g_led);
 
-/*
-	pin_high(y_dir);
-	pin_high(e_heat);
-	pin_high(g_led);
 	_delay_ms(1000);
-	pin_high(r_led);
-	_delay_ms(1000);
-	pin_low(g_led);
-	_delay_ms(1000);
-	pin_low(r_led);
-	pin_low(y_dir);
-	pin_low(e_heat);
-*/	_delay_ms(1000);
 
 
+	pin_toggle(r_led);
+	_delay_ms(1000);
 
 	}
 	return 1;

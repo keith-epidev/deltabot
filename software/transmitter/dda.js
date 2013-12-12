@@ -25,10 +25,10 @@ calc_heights = function(p){
 	var conv = 32/0.21;
 
 //	var r = 346.55;
-	var r = 146.55;
+	var r = 128;
 	var r2 = Math.pow(r,2);
-	var D = 123.4 
-	var pr = 0;//26.5;
+	var D = 79 
+	var pr = 22;//26.5;
 
 	var root3 = Math.sqrt(3);
 	var root32 = Math.sqrt(3)/2;
@@ -41,18 +41,25 @@ calc_heights = function(p){
 	console.log("z="+z);
 	console.log(D);
 */
+        var a1 = z + Math.sqrt( r2 - Math.abs( Math.pow(x,2) + Math.pow(y - D - pr,2) )); 
+	
+
+
+        var a2 = z + Math.sqrt( r2 - Math.abs( Math.pow(x - pr*root32 - (-D*root32),2) + Math.pow(y - pr/2 - ( -D/2),2)) ) 
+        var a3 = z + Math.sqrt( r2 - Math.abs( Math.pow(x + pr*root32 - (-D*root32),2) + Math.pow(y - pr/2 - ( -D/2),2)) ) 
+
+/*
         var a1 = z + Math.sqrt( r2 - Math.pow( dist( x, (y +pr) - D ),2) );
         var a2 = z + Math.sqrt( r2 - Math.pow( dist( (x-.5*pr ) + root3*D/2, (y - root32*pr) + D/2 ),2) );
         var a3 = z + Math.sqrt( r2 - Math.pow( dist( (x+.5*pr) - root3*D/2, (y - root32*pr ) + D/2 ),2) );
 
-/*
 	console.log(a1);
 	console.log(a2);
 	console.log(a3);
 */
-//	a1 *= conv;
-//	a2 *= conv;
-//	a3 *= conv;
+	a1 *= conv;
+	a2 *= conv;
+	a3 *= conv;
 	
 	return [a1,a2,a3];
 //	return calc_speeds(a1,a2,a3);

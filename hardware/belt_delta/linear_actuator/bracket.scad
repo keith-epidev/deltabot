@@ -12,7 +12,10 @@ module fillet(r, h) {
         }
 }
 
+module axle(){
+		cylinder(r=4,h=28);
 
+}
 module fillet_face(r,h,s,x){
 
 
@@ -95,16 +98,16 @@ union(){
 	
 	translate([-3,0,12])	
 		difference(){
-		cube([10,outer,14],center=true);
+		cube([10,outer,20],center=true);
 		for(j = [-1,1])
 		rotate([0,90,0]){
-		translate([0,j*13,-10])
+		translate([-2,j*13,-10])
 		cylinder(r=4,h=25);
 
 		if(j == -1)
-		translate([-7,j*outer/2,0]) rotate([0,0,0]) fillet(8,25);
+		translate([-10,j*outer/2,0]) rotate([0,0,0]) fillet(8,25);
 		else
-		translate([-7,j*outer/2,0]) rotate([180,0,0]) fillet(8,25);
+		translate([-10,j*outer/2,0]) rotate([180,0,0]) fillet(8,25);
 
 		}
 
@@ -136,7 +139,6 @@ union(){
 
 
 
-
 module bracket_top(){
 
 	outer = 42;
@@ -157,13 +159,18 @@ union(){
 	translate([10,0,0]) cube([outer,outer,5],center=true);
 
 
+translate([0,0,-4]){
 
-	translate([0,0,-4])
+	translate([0,0,-2]) cylinder(r=15,h=2);
+	translate([0,0,24]) cylinder(r=15,h=2);
+
+
+
 	difference(){
 		cylinder(r=15,h=26);
 		cylinder(r=11.05,h=68,center=true);
 	}
-
+}
 		difference(){
 		translate([17,0,depth-2])cube([14,outer,10],center=true);
 		translate([0,0,5.5]) cylinder(r=17, h=8,center=true);
@@ -173,16 +180,16 @@ union(){
 	
 	translate([-3,0,12])	
 		difference(){
-		cube([10,outer,14],center=true);
+		cube([10,outer,20],center=true);
 		for(j = [-1,1])
 		rotate([0,90,0]){
-		translate([0,j*13,-10])
+		translate([-2,j*13,-10])
 		cylinder(r=4,h=25);
 
 		if(j == -1)
-		translate([-7,j*outer/2,0]) rotate([0,0,0]) fillet(8,25);
+		translate([-10,j*outer/2,0]) rotate([0,0,0]) fillet(8,25);
 		else
-		translate([-7,j*outer/2,0]) rotate([180,0,0]) fillet(8,25);
+		translate([-10,j*outer/2,0]) rotate([180,0,0]) fillet(8,25);
 
 		}
 
@@ -203,7 +210,8 @@ union(){
 	for(i = [0:4])
 	rotate(i*360/4)
 	translate([inner,inner,0])	cylinder(r=1.7, h=30,center=true);
-	cylinder(r=11.05, h=30,center=true);
+translate([0,0,-4])	cylinder(r=11.05, h=20);
+translate([0,0,-8])	cylinder(r=8, h=40);
 	translate([40,0,-depth-4])cube([outer,outer+2,15],center=true);
 
 	}
@@ -225,5 +233,5 @@ union(){
 
 
 
-bracket_top();
+//bracket_top();
 //bracket_bottom();
