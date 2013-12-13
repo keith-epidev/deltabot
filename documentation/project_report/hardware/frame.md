@@ -12,7 +12,7 @@ Positives
 - Easy to modify / tune
 
 Negatives
-- Expensive at $25 per meter
+- Relatively expensive at $25 per meter
 - Requires special cutting tools
 - Hard to source
 

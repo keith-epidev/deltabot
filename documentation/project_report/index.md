@@ -27,8 +27,7 @@
 ![hardware]
 ![electronics]
 ![software]
-![testing]
-![results]
+![testing_results]
 
 
 #(appendices.tex)

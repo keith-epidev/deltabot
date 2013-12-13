@@ -13,7 +13,7 @@ Universal Joint Angle Range
 ---------------------------
 
 
-![Universal joint angle horizontal range](top-view-angle_diagram.svg)
+![Universal joint angle horizontal range](top-view-angle_diagram.svg){width=100mm}
 
 The universal joints that will pivot to allow full movement will need to be capable of a certain range. This can be calculated exactly with:
 
