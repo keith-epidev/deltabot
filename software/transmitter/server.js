@@ -61,6 +61,9 @@ var messages_sent = 0;
 var time_started = Date.now();
 
 
+//init printer
+cmds.unshift("home");
+
 input.on('data',function(d){
 	var d = d.toString();
 	console.log("[!] "+d);
@@ -74,13 +77,15 @@ input.on('data',function(d){
 				index--;
 			}
 
-			if(index > cmds.length-1){
+			if(index > cmds.length){
 				exit();
 			}
 
 			var cmd = cmds[index];
 			console.log("[~] "+cmd);
+			//setTimeout(function(){
 			output.write(cmd+"\r");
+			//},2000);
 			messages_sent++;
 			index++;
 
