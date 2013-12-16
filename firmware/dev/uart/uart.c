@@ -23,10 +23,10 @@ ISR(USART0_RX_vect){
 	value = '\0';
 
 	circular_buffer_put(target->in,value);
-	uart_put(value);//echo
+//	uart_put(value);//echo
 	
 	if(value == '\0'){
-		uart_write("\r\n");
+//		uart_write("\r\n");
 		target->new_line++;
 	}
 
@@ -47,8 +47,8 @@ Uart* uart_init(){
 
 	Uart *uart = (Uart * ) malloc( sizeof( Uart ) );
 
-	uart->in = circular_buffer_new(256);
-	uart->out = circular_buffer_new(256);
+	uart->in = circular_buffer_new(128);
+	uart->out = circular_buffer_new(128);
 	uart->new_line = 0;
 
 	UBRR0L = BAUD_PRESCALE;

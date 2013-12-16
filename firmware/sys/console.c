@@ -165,11 +165,12 @@ void aprox(){
 	double a2 = atof(args[3]);
 	double a3 = atof(args[4]);
 
+//	printf("pos_start=%i\n",get_pos_start());
+
 	while(motion_is_full()){
 //		printf("x");
 	}
 
-//	printf("%Lf %f %f %f",distance,a1,a2,a3);
 	queue_motion(distance, distance_change, a1, a2, a3);
 
 }
@@ -203,7 +204,6 @@ void sound(){
 
 void rise(){
 
-	set_speed(20);
 	motion_current->distance = 0;
 	motion_current->distance_change = INFINITY;
 	motion_current->motor[0].dir = 0;
@@ -241,7 +241,6 @@ void rise(){
 }
 
 void drop(){
-	set_speed(20);
 	motion_current->distance = 0;
 	motion_current->distance_change = INFINITY;
 	motion_current->motor[0].dir = 1;
@@ -276,6 +275,7 @@ void drop(){
 void home(){
 	rise();
 	drop();
+	pos_init();
 }
 
 

@@ -1,10 +1,12 @@
 #include "stepper.h"
 
 volatile Stepper* steppers[4];
-volatile int speed = 20;
-volatile int speed_min = 20;//I want to be able to notice it slow down for tests
+volatile int speed = 4000;
+volatile int speed_min = 4000;//I want to be able to notice it slow down for tests
 volatile int speed_max = 1;
-volatile int speed_accel = 1;
+volatile int speed_accel = 10;
+volatile int speed_jerk = 100;
+volatile int speed_jerk_count = 0;
 
 volatile unsigned int steps = 0;
 volatile int s = 0;
@@ -85,7 +87,14 @@ int get_speed(){
 }
 
 void accel(long double change){
-	if(change < 200	){
+
+speed_jerk_count++;
+if(speed_jerk_count > speed_jerk){
+speed_jerk_count = 0;
+printf("s:%i\n",speed);
+
+
+	if(change < 20	){
 		if(speed < speed_min)
 			speed += speed_accel;
 	}else{ 
@@ -94,6 +103,8 @@ void accel(long double change){
 	}
 
 	OCR1A = speed; 
+
+}
 }
 
 
@@ -101,9 +112,10 @@ void steppers_enable(){
 	cli();
 	pin_low(steppers[0]->enable);
 	pin_high(r_led);
-//	TCCR1B |= ((1 << CS10)); // Start timer at Fcpu/64 
-	TCCR1B |= ((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
+	TCCR1B |= ((1 << CS12)); // Start timer at Fcpu/64 
+//	TCCR1B |= ((1 << CS10) ); // Start timer at Fcpu/64 
 	TIMSK1 |= (1 << OCIE1A); // Enable CTC interrupt 
+	set_speed(speed_min);
 	stepper_active = 1;
 	sei(); //  Enable global interrupts 
 //	printf("enb\n");
@@ -113,10 +125,10 @@ void steppers_disable(){
 	cli();
 	pin_high(steppers[0]->enable);
 	pin_low(r_led);
-//	TCCR1B &= ~( (1 << CS10)); // Start timer at Fcpu/64 
-	TCCR1B &= ~((1 << CS10)) | (1 << CS11); // Start timer at Fcpu/64 
+	TCCR1B &= ~( (1 << CS12)); // Start timer at Fcpu/64 
+//	TCCR1B &= ~((1 << CS10)); // Start timer at Fcpu/64 
 	TIMSK1 &= ~(1 << OCIE1A); // Enable CTC interrupt 
-	set_speed(40);
+	set_speed(speed_min);
 	stepper_active = 0;
 	sei(); //  Enable global interrupts 
 //	printf("dis\n");

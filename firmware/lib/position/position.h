@@ -6,7 +6,7 @@
 #include "sys/console.h"
 #include <math.h>
 
-#define QUEUE_SIZE 4
+#define QUEUE_SIZE 64
 
 
 typedef struct Motion_actuator{
@@ -50,5 +50,7 @@ void do_motion();
 void shift_motion();
 void queue_motion(long double distance, long double distance_change, double a1, double a2, double a3);
 char motion_is_full();
+int get_pos_start();
+void pos_init();
 
 #endif 

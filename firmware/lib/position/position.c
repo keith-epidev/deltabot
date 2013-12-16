@@ -33,8 +33,8 @@ volatile Motion* motion_current =  &motion_queue[0];
 
 volatile int hold_on = 0;
 
-int start = 0;
-int size = 0;
+int pos_start = 1;
+int pos_size = 0;
 
 double dist(double a, double b){
 	return sqrt( pow(a,2) + pow(b,2) );
@@ -60,14 +60,22 @@ void calc_speed(){
 
 
 char motion_is_full(){
-	return size == QUEUE_SIZE;
+	return pos_size == QUEUE_SIZE;
+}
+
+void pos_init(){
+	pos_start = 0;
+	pos_size = 0;
+}
+
+int get_pos_start(){
+	return pos_start;
 }
 
 
 void queue_motion(long double distance, long double distance_change, double a1, double a2, double a3){
-	int end = (start+size)%QUEUE_SIZE;
-
-
+	int end = (pos_start+pos_size)%QUEUE_SIZE;
+//	printf("end=%i\n",end);
 	//printf("queue");
 
 	//printf("start:%i\n",start);
@@ -76,9 +84,11 @@ void queue_motion(long double distance, long double distance_change, double a1, 
 	//printf("a:%i\n",stepper_active);
 
 
-	size++;	
+	pos_size++;	
 	motion_queue[end].distance = distance;
 	motion_queue[end].distance_change = distance_change;
+
+//	printf("d=%f\n",motion_queue[end].distance);
 
 	motion_queue[end].motor[0].dir = a1 > 0 ? 0 : 1;
 	motion_queue[end].motor[1].dir = a2 > 0 ? 0 : 1;
@@ -91,6 +101,8 @@ void queue_motion(long double distance, long double distance_change, double a1, 
 	if(stepper_active == 0){
 		do_motion();
 		steppers_enable();
+	//	printf("ye\n");
+
 	}
 
 }
@@ -98,10 +110,13 @@ void queue_motion(long double distance, long double distance_change, double a1, 
 void do_motion(){
 	//printf("do\n");
 
-	motion_current = &motion_queue[start];
-	pin_set(steppers[0]->direction,motion_queue[start].motor[0].dir);
-	pin_set(steppers[1]->direction,motion_queue[start].motor[1].dir);
-	pin_set(steppers[2]->direction,motion_queue[start].motor[2].dir);
+	motion_current = &motion_queue[pos_start];
+	pin_set(steppers[0]->direction,motion_queue[pos_start].motor[0].dir);
+	pin_set(steppers[1]->direction,motion_queue[pos_start].motor[1].dir);
+	pin_set(steppers[2]->direction,motion_queue[pos_start].motor[2].dir);
+
+	
+//	printf("doing:%i=>%f\n",pos_start,motion_current->distance);
 	
 	a1_cycle = 0;
 	a2_cycle = 0;
@@ -110,14 +125,18 @@ void do_motion(){
 
 
 void shift_motion(){
-	//printf("shift\n");
+//	printf("shift\n");
 
-	start = (start+1)%QUEUE_SIZE;
-	size--;
+	pos_start = (pos_start+1)%QUEUE_SIZE;
+	pos_size--;
 
 	//printf("srt%i sze:%i\n",start,size);
-	if(size > 0)
+	if(pos_size > 0){
+//	printf("again\n");
 		do_motion();
-	else
+	}else{
+//		printf("kill\n");
 		steppers_disable();
+	}
+
 }
