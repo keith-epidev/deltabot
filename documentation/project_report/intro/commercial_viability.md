@@ -3,7 +3,7 @@ Commercial Viability
 
 This old technology is becoming established in a new market. While it becomes more accessible, new opportunities begin to emerge and intern, increases demand. Prices are decreasing, materials are becoming more accessible and there is an increasing amount of printable designs being uploaded to the Internet. The later attributes the most positive influence to the 3D printing market. This makes an old product more valuable.
 
-![Growth of CAD designs on thingiverse.com](growth.pdf)
+![Growth of CAD designs on thingiverse.com cite[6]](growth.pdf)
 
 It is clear that this market is expanding at a promising rate. Furthermore because there is such a diverse range of neighbouring markets that will benefit from this technology, it is likely that it will be supported by commercial demand alone. Applications for 3D printing have yet to be completely discovered, the boundaries are always being pushed by innovators. It is apparent that a very successful industry has been created.
 

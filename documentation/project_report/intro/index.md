@@ -1,9 +1,9 @@
 Introduction
 ============
 
-3D Printers have received a lot of media attention recently. Additive manufacturing has been around for at least 30 years<cite>1, 2</cite>. However, in the last five years popularity has increased dramatically due to the availability of much cheaper entry level machines. It is now possible for the general public to purchase pre-assembled printers at a similar cost as a personal computer.
+3D Printers have received a lot of media attention recently. Additive manufacturing has been around for at least 30 years cite[1, 2]. However, in the last five years popularity has increased dramatically due to the availability of much cheaper entry level machines. It is now possible for the general public to purchase pre-assembled printers at a similar cost as a personal computer.
 
-There will always be innovation and dangers associated with a new technology. We already have prime examples of both aspects; At a 2011 TED talk, Dr Anthony Atala presented a human kidney prototype that his team had printed<cite>3</cite>. Late 2012 Cody Wilson uploaded a video to Youtube that showed himself firing a gun mostly composed of 3D printed parts<cite>4</cite>.
+There will always be innovation and dangers associated with a new technology. We already have prime examples of both aspects; At a 2011 TED talk, Dr Anthony Atala presented a human kidney prototype that his team had printed cite[3]. Late 2012 Cody Wilson uploaded a video to Youtube that showed himself firing a gun mostly composed of 3D printed parts cite[4].
 
 The environment will benefit from this new way of producing products. Firstly, plastic items can be recycled and reused to create new, more useful items. This not only reduces costs but it also eliminates transportation of new items. They no longer need to be imported and transported all over the country, they can just be downloaded.
 

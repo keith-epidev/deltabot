@@ -34,12 +34,9 @@ Negatives
 
 The frame will have a small enclosed area for the electronics and power supply. The printer bed is mounted on top of the case. There is a beam on the top level that intersects the face in half. This is primarily for a place to mount the plastic feeder but also serves as a structural support beam.
 
-We will need to know how much material to order. There is 3 equilateral triangles with side lengths of #D#  and there are 3 rails that need to be of #2D + 3*.03#. The later 0.03 is to allocate room for an enclosure so that we can maintain a symmetrical print area. But for practical purposes, we will not consider the extra length so that it is possible to use a multiple of the original materials length.
-##M = 3(3D) + 3(2D)  + {\sqrt{3}\over 2}D##
-##M = (15 +  {\sqrt{3}\over 2} )D##
-Now, we need rewrite this by substituting the relationship between #D# and the print bed radius #b#.
-## D = 2\sqrt{3}(b+r) ##
-##M(r,b) = (15 +  {\sqrt{3}\over 2} ) ( 2\sqrt{3}(b+r)) ##
+We will need to know how much material to order. There is 4 equilateral triangles with side lengths of #D#  and there are 4 rails that need to be of #D#. 
+##M_{threaded} = 3(4D) + 2(D\sqrt{3}) ##
+##M_{smooth} = 3(2*2D)  ##
 To minimise waste, #D# needs to be a multiple of the purchased material's length.  To further reduce waste, the purchased length should be close to a whole number.
 
 

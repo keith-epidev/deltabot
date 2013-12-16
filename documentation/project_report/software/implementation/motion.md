@@ -9,7 +9,7 @@ Before we can write software to control the hardware, we must mathematically def
 
 So pulse on the stepper drivers STEP line will make the stepper driver increment rotation by 0.225 degrees. This rotation is translated into linear motion via the belt drive. So for every step, the carriage vertically travels 45.1519 um. Direction is controlled by either a high or low on the DIR.
 
-So a motion frame provided from the computer is described with a distance (how many steps) and three ratios of how often a specific motor should step (equivalent to the speed). For example "1337 1 0.5 0.2" translates to "Cycle 1337 times, every cycle step X, every second cycle step Y and every fifth cycle Z.
+So a motion frame provided from the computer is described with a distance (how many steps) and three ratios of how often a specific motor should step (equivalent to the speed). For example "1337 1 0.5 0.2" translates to "Cycle 1337 times, every cycle step X, every second cycle step Y and every fifth cycle Z".
 
 Lets say we had a vector circle. We need to break it up into straight lines so that we can use the method explained previously. Ideally we would break it up into many small lines, but for this example we will split it up into 8 paths. To help visualise the problem, we are going to assume that we are dealing with a gantry system.
 

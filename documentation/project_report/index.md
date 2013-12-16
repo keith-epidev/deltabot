@@ -28,9 +28,10 @@
 ![electronics]
 ![software]
 ![testing_results]
+![management]
+![conclusion.md]
 
-
-#(appendices.tex)
+![appendices]
 #(bibliography.tex)
 #(end.tex)
 

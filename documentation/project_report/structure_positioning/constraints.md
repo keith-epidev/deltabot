@@ -3,7 +3,7 @@ Constraints
 
 Printing Bed
 ------------
-A design assumption was made at the beginning of this section; The platform can not be positioned outside of the frame. To force this rule to apply, we must set the linkages length equal to the minimum distance from a rail to a side of the frame. The maximum length required is a line straight down the y axis from the rail to the frame which is equal to #{\sqrt{3}\over 2}D#. If we swing the platform around, pushing it to the maximum radius that this length permits, we see that the path is not actually a circle but a rounded triangle. The light blue path in figure [11] is the maximum positions. Such an unusual path is typically not needed, so we will simplify our problem by using a circular print bed.
+A design assumption was made at the beginning of this section; The platform can not be positioned outside of the frame. To force this rule to apply, we must set the linkages length equal to the minimum distance from a rail to a side of the frame. The maximum length required is a line straight down the y axis from the rail to the frame which is equal to #{\sqrt{3}\over 2}D#. If we swing the platform around, pushing it to the maximum radius that this length permits, we see that the path is not actually a circle but a rounded triangle. The light blue path in fig. ref[top-view-angle_diagram.svg] is the maximum positions. Such an unusual path is typically not needed, so we will simplify our problem by using a circular print bed.
 
 
 To allow for a platform, we must subtract its radius from each of the linkages length. So, our rule for #h# is:

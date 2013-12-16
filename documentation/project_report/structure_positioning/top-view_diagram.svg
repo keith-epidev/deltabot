@@ -13,7 +13,7 @@
    height="321.37466"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="top-view_diagram.svg">
   <defs
      id="defs4">
@@ -288,6 +288,34 @@
          transform="scale(0.8,0.8)"
          inkscape:connector-curvature="0" />
     </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5286-9"
+       style="overflow:visible">
+      <path
+         id="path5288-3"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4626"
+       style="overflow:visible">
+      <path
+         id="path4628"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -296,16 +324,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="85.377266"
-     inkscape:cy="178.47518"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="187.52779"
+     inkscape:cy="218.41661"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="702"
-     inkscape:window-height="784"
-     inkscape:window-x="0"
-     inkscape:window-y="14"
+     inkscape:window-width="1520"
+     inkscape:window-height="1554"
+     inkscape:window-x="6"
+     inkscape:window-y="36"
      inkscape:window-maximized="0"
      fit-margin-top="10"
      fit-margin-left="10"
@@ -467,17 +495,6 @@
          y="305.84155">b<tspan
    style="font-size:9.10012817px;baseline-shift:sub"
    id="tspan5192">2</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="257.90607"
-       y="350.55774"
-       id="text5194-1"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5196-4"
-         x="257.90607"
-         y="350.55774">D</tspan></text>
     <path
        transform="matrix(1.0437516,0,0,1.0437516,-39.740798,-31.062906)"
        d="m 364.86708,276.04709 c 0,40.02874 -32.4497,72.47844 -72.47844,72.47844 -40.02874,0 -72.47844,-32.4497 -72.47844,-72.47844 0,-40.02874 32.4497,-72.47844 72.47844,-72.47844 40.02874,0 72.47844,32.4497 72.47844,72.47844 z"
@@ -579,5 +596,21 @@
          id="tspan4083">e<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
    id="tspan4087">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="329.21805"
+       y="284.38461"
+       id="text11625"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan11627"
+         x="329.21805"
+         y="284.38461">𝑫</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.56472778;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#marker5286);marker-end:url(#marker5286)"
+       d="M 269.54503,253.10459 396.58274,330.99918"
+       id="path3005-7-9"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
