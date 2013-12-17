@@ -3,7 +3,7 @@ Motion
 
 Before we can write software to control the hardware, we must mathematically define the system. Lets start with the pulley. The radius of our GT2 pulley is 11.5mm. I have selected to only microstep 8 times. This should give a reasonable balance between accuracy and speed.
 
-![radius.eps](radius.eps){width=40mm}
+![Pulley diagram](radius.eps){width=40mm}
 
 ## D = 2 * \pi * r * STEP\_DEG/360 ##
 
@@ -14,7 +14,7 @@ So a motion frame provided from the computer is described with a distance (how m
 Lets say we had a vector circle. We need to break it up into straight lines so that we can use the method explained previously. Ideally we would break it up into many small lines, but for this example we will split it up into 8 paths. To help visualise the problem, we are going to assume that we are dealing with a gantry system.
 
 
-![pixels.eps](pixels.eps){width=120mm}
+!['Physical Pixels' ](pixels.eps){width=120mm}
 
 Firstly, the circle is broken into straight paths. From the starting point we need to travel along the y axis 1 step. So this would be described with "1 0 1 0", following that we need to move in the x and y direction one step. That is "1 1 1 0". And so on. The only difference for a delta machine is that we are not directly plotting a image, we are controlling the actuator heights as a function of the image.
 

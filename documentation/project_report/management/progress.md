@@ -26,5 +26,4 @@ For a complete working 3D printer the following tasks need to be completed:
 - Implement extruder feeder control
 - Implement temperature PID loop
 - Extend auto calibration
-
-
+- Increase system clock to 20Mhz

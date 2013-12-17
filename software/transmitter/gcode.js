@@ -6,13 +6,20 @@ var phy_offset = 0;
 
 parse_file = function(data){
 
+	push_cart([0,0,160]);
 
+/*
 	data = data.split("\n");
 	for(var i = 0; i < data.length; i++)
 		parse_line(data[i]);
+*/
+
+		parse_cart(data);
 
 
-	//	parse_cart(data);
+	push_cart([0,0,160]);
+
+
 
 	
 	for(var i = 0; i < cmds.length; i++)
@@ -94,13 +101,16 @@ parse_cart = function(data){
 	var cart = JSON.parse(data);
 	
 
-		cart.unshift([0,0,160]);
-		cart.push([0,0,160]);
-
-
 	for(var i = 0; i < cart.length; i++){	
 		var coord = cart[i];
+		push_cart(coord);	
+	}
 
+
+
+}
+
+push_cart = function(coord){
 		var last = clone(axies);
 
 		axies.X = coord[0];
@@ -108,7 +118,6 @@ parse_cart = function(data){
 		axies.Z = coord[2];
 
 
-		console.log(i);
 		console.log(JSON.stringify(axies));
 
 		var last_heights = calc_heights([last.X,last.Y,last.Z]);
@@ -117,10 +126,6 @@ parse_cart = function(data){
 		var speeds = calc_speeds(new_heights,last_heights);
 
 		cmds.push(speeds);
-			
-	}
-
-
 
 }
 
