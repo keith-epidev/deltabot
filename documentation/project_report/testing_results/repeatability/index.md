@@ -18,6 +18,6 @@ These results were measured using a digital caliper. This test is not conclusive
 | Variance | Result over 100 | Average |
 |──────────|─────────────────|─────────|
 |──────────|─────────────────|─────────|
-| #x#      | 2.64mm          | 26um    |
-| #y#      | 0.63mm          | 6um     |
+| #x#      | 2.64mm          | 26.4um  |
+| #y#      | 0.63mm          | 6.3um   |
 	Drift results
